@@ -258,9 +258,9 @@ export default function ApartmentDetail({
                     </div>
                   </div>
 
-                  <button className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all mb-4">
+                  <a href="/checkout" className="block w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all mb-4 text-center">
                     Reservar Ahora
-                  </button>
+                  </a>
 
                   <p className="text-xs text-gray-600 text-center">
                     Todavía no se ha realizado ningún cargo
