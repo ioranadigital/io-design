@@ -1,0 +1,21 @@
+{
+  "blueprints": [
+    {
+      "id": "78ff9db4-64dd-4cfb-926d-6657dae5992f",
+      "type": "real-estate-luxury-rental",
+      "name": "Real Estate - Luxury Rental Properties",
+      "status": "published",
+      "version": "1.0.0",
+      "category": "new",
+      "industries": [
+        "Real Estate",
+        "Hospitality",
+        "Property Management",
+        "Vacation Rentals"
+      ],
+      "createdAt": "2026-05-14T11:14:04.411Z",
+      "createdFromUrl": "https://luxuryrentalsmadrid.com/",
+      "deployedAt": "2026-05-14T11:14:16.567Z"
+    }
+  ]
+}

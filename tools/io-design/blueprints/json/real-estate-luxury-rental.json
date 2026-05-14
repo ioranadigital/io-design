@@ -1,0 +1,240 @@
+{
+  "id": "78ff9db4-64dd-4cfb-926d-6657dae5992f",
+  "version": "1.0.0",
+  "createdFrom": "https://luxuryrentalsmadrid.com/",
+  "type": "real-estate-luxury-rental",
+  "name": "Real Estate - Luxury Rental Properties",
+  "description": "Blueprint for luxury rental property platforms with booking optimization and trust-building elements.",
+  "category": "new",
+  "industries": [
+    "Real Estate",
+    "Hospitality",
+    "Property Management",
+    "Vacation Rentals"
+  ],
+  "targetAudiences": [
+    "B2C",
+    "Direct-to-Consumer",
+    "Decision Makers"
+  ],
+  "geographicRelevance": [
+    "Global",
+    "Europe"
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "displayName": "Hero",
+      "purpose": "Capture attention and communicate main value proposition",
+      "order": 1,
+      "required": true,
+      "estimatedConversionWeight": 10,
+      "recommendedComponent": "HeroV1",
+      "alternativeComponents": [
+        "HeroVideo",
+        "HeroGradient"
+      ],
+      "hasImage": true,
+      "hasVideo": false
+    },
+    {
+      "id": "features",
+      "name": "Features Section",
+      "displayName": "Our Features",
+      "purpose": "Showcase key benefits and features",
+      "order": 2,
+      "required": true,
+      "estimatedConversionWeight": 8,
+      "recommendedComponent": "GridServicios",
+      "alternativeComponents": [
+        "BentoBox",
+        "FeatureCards"
+      ],
+      "hasImage": false,
+      "hasVideo": false
+    },
+    {
+      "id": "testimonials",
+      "name": "Testimonials Section",
+      "displayName": "What Guests Say",
+      "purpose": "Build credibility with customer testimonials",
+      "order": 3,
+      "required": false,
+      "estimatedConversionWeight": 7,
+      "recommendedComponent": "TestimonialsCarousel",
+      "alternativeComponents": [
+        "TestimonialsGrid"
+      ],
+      "hasImage": false,
+      "hasVideo": false
+    },
+    {
+      "id": "cta-primary",
+      "name": "Primary CTA Section",
+      "displayName": "Call to Action",
+      "purpose": "Drive main conversion action",
+      "order": 4,
+      "required": true,
+      "estimatedConversionWeight": 9,
+      "recommendedComponent": "CTABlock",
+      "backgroundColor": "primary",
+      "hasImage": false,
+      "hasVideo": false
+    },
+    {
+      "id": "footer",
+      "name": "Footer Section",
+      "displayName": "Footer",
+      "purpose": "Provide navigation and secondary actions",
+      "order": 5,
+      "required": true,
+      "estimatedConversionWeight": 1,
+      "recommendedComponent": "Footer",
+      "hasImage": false,
+      "hasVideo": false
+    }
+  ],
+  "recommendedComponents": {
+    "hero": [
+      "HeroV1",
+      "HeroVideo",
+      "HeroGradient",
+      "HeroDual"
+    ],
+    "features": [
+      "GridServicios",
+      "BentoBox",
+      "FeatureCards"
+    ],
+    "forms": [
+      "LeadGen",
+      "BookingForm",
+      "ContactForm"
+    ],
+    "sections": [
+      "TestimonialsCarousel",
+      "FAQAccordion",
+      "ClientLogos"
+    ]
+  },
+  "exampleData": {
+    "projectConfig": {
+      "brandName": "Luxury Rentals Madrid",
+      "primaryColor": "rgba(0, 0, 0, 0)",
+      "secondaryColor": "#10b981",
+      "fontFamily": "Inter"
+    },
+    "conversionBlock": {
+      "headline": "Discover Your Perfect Luxury Apartment",
+      "subheadline": "Exclusive properties in Madrid's best neighborhoods",
+      "ctaLabel": "Browse Apartments",
+      "trustSignal": "Trusted by 5,000+ guests"
+    },
+    "h2Services": [
+      "Prime Location",
+      "Luxury Amenities",
+      "24/7 Support",
+      "Flexible Booking"
+    ],
+    "faqItems": [
+      {
+        "question": "What is included?",
+        "answer": "Our luxury apartments include furnishings, utilities, and premium amenities."
+      },
+      {
+        "question": "Can I book short-term?",
+        "answer": "Yes, we offer flexible booking from 1 week to long-term rentals."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sarah Johnson",
+        "text": "Amazing luxury apartments in the heart of Madrid!",
+        "stars": 5
+      },
+      {
+        "name": "Marco Rossi",
+        "text": "Excellent service and beautiful properties.",
+        "stars": 5
+      }
+    ]
+  },
+  "designTokens": {
+    "colors": {
+      "primary": "rgba(0, 0, 0, 0)",
+      "secondary": "#10b981",
+      "accent": "#f59e0b",
+      "background": "rgb(255, 255, 255)",
+      "text": "rgb(255, 255, 255)",
+      "textLight": "#6b7280"
+    },
+    "typography": {
+      "headingFont": "Inter",
+      "bodyFont": "Inter",
+      "headingSize": "2.5rem",
+      "bodySize": "1rem"
+    }
+  },
+  "ctaStrategy": {
+    "primaryCTA": "Browse Apartments",
+    "ctaPlacements": [
+      "hero",
+      "features-end",
+      "footer"
+    ],
+    "ctaVariant": "button",
+    "trustSignalPlacement": "below-cta",
+    "ctaColor": "primary",
+    "secondaryCTA": "Learn More"
+  },
+  "forms": [
+    {
+      "id": "booking-form",
+      "name": "Booking Form",
+      "position": "section",
+      "fields": [
+        "name",
+        "email",
+        "checkIn",
+        "checkOut",
+        "guests"
+      ],
+      "submitText": "Search Apartments",
+      "submitAction": "supabase"
+    }
+  ],
+  "seo": {
+    "schemaType": "Organization",
+    "recommendedKeywords": [
+      "luxury apartments Madrid",
+      "exclusive rentals",
+      "Madrid accommodation"
+    ],
+    "h1Pattern": "Luxury Apartments in {city} - Exclusive Properties"
+  },
+  "metrics": {
+    "estimatedConversionRate": 3.5,
+    "estimatedBounceRate": 96.5,
+    "avgTimeOnPage": "2m 30s",
+    "recommendedPageLength": "medium",
+    "mobileOptimized": true,
+    "accessibilityScore": 92
+  },
+  "metadata": {
+    "createdAt": "2026-05-14T11:14:04.411Z",
+    "createdFromUrl": "https://luxuryrentalsmadrid.com/",
+    "createdFromTitle": "Luxury Rentals Madrid",
+    "successFactors": [
+      "Clear value proposition",
+      "Strong CTA",
+      "Multiple trust signals"
+    ],
+    "improvementOpportunities": [
+      "Add customer testimonials",
+      "Improve page speed",
+      "Add FAQ section"
+    ],
+    "notes": "Blueprint generated from https://luxuryrentalsmadrid.com/"
+  }
+}
