@@ -31,7 +31,10 @@ const BreadCumb: FC<BreadCumbProps> = ({ bgimg, Title, breadcrumbs }) => {
 
   return (
     <div className="common-hero" data-background={bgimg}>
-      <div className="breadcrumb-container" style={{ padding: "20px 0" }}>
+      <div
+        className="breadcrumb-container"
+        style={{ padding: "100px 0 20px 0" }}
+      >
         <div className="container">
           <BreadcrumbInline items={items} />
         </div>
