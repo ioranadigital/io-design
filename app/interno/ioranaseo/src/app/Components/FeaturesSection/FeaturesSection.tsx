@@ -79,59 +79,127 @@ const FeaturesSection: FC = () => {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "40px",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "60px",
+            alignItems: "center",
           }}
         >
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              style={{
-                display: "flex",
-                gap: "16px",
-              }}
-            >
+          {/* Left Column - Features */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "40px",
+            }}
+          >
+            {features.map((feature, index) => (
               <div
+                key={index}
                 style={{
                   display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "64px",
-                  height: "64px",
-                  minWidth: "64px",
-                  borderRadius: "12px",
-                  backgroundColor: "#EDE9FE",
-                  color: "#4D32A5",
-                  flexShrink: 0,
+                  gap: "16px",
                 }}
               >
-                {feature.icon}
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "64px",
+                    height: "64px",
+                    minWidth: "64px",
+                    borderRadius: "12px",
+                    backgroundColor: "#EDE9FE",
+                    color: "#4D32A5",
+                    flexShrink: 0,
+                  }}
+                >
+                  {feature.icon}
+                </div>
+                <div>
+                  <h3
+                    style={{
+                      fontSize: "20px",
+                      fontWeight: "700",
+                      color: "#1a1a1a",
+                      marginBottom: "8px",
+                      margin: "0 0 8px 0",
+                    }}
+                  >
+                    {feature.title}
+                  </h3>
+                  <p
+                    style={{
+                      color: "#666",
+                      fontSize: "15px",
+                      lineHeight: "1.6",
+                      margin: "0",
+                    }}
+                  >
+                    {feature.description}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: "700",
-                    color: "#1a1a1a",
-                    marginBottom: "8px",
-                    margin: "0 0 8px 0",
-                  }}
-                >
-                  {feature.title}
-                </h3>
-                <p
-                  style={{
-                    color: "#666",
-                    fontSize: "15px",
-                    lineHeight: "1.6",
-                    margin: "0",
-                  }}
-                >
-                  {feature.description}
-                </p>
+            ))}
+          </div>
+
+          {/* Right Column - Image/Logos */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#F3F4F6",
+              borderRadius: "16px",
+              padding: "60px 40px",
+              minHeight: "400px",
+            }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <p
+                style={{
+                  fontSize: "14px",
+                  fontWeight: "700",
+                  color: "#4D32A5",
+                  textTransform: "uppercase",
+                  letterSpacing: "1px",
+                  marginBottom: "24px",
+                  margin: "0 0 24px 0",
+                }}
+              >
+                Confían en Nosotros
+              </p>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(2, 1fr)",
+                  gap: "24px",
+                  justifyItems: "center",
+                }}
+              >
+                {[1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    style={{
+                      width: "120px",
+                      height: "80px",
+                      backgroundColor: "#ffffff",
+                      borderRadius: "12px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "#999",
+                      fontSize: "13px",
+                      fontWeight: "600",
+                      border: "1px solid #E5E7EB",
+                    }}
+                  >
+                    Logo {i}
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
