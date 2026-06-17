@@ -34,7 +34,7 @@ const Nav: FC<NavProps> = ({ setMobileToggle }) => {
                   </li>
                   <li>
                     <Link
-                      href="/servicios/seo-local-prueba"
+                      href="/servicios/seo-local"
                       onClick={() => setMobileToggle(false)}
                     >
                       SEO Local
