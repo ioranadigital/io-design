@@ -1,7 +1,8 @@
 import React from "react";
 import BreadCumb from "@/app/Components/Common/BreadCumb";
 import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
-import PymesProcess from "@/app/Components/PymesProcess";
+import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
+import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
 
 const DocumentacionPage = () => {
@@ -18,10 +19,13 @@ const DocumentacionPage = () => {
           title="Documentación Controlada"
           content="Gestión eficiente de documentación. Sistema de control de versiones y acceso seguro para tu equipo."
           img="/assets/img/hero/hero3-main-img.png"
+          showImage={false}
         ></HeroBannerPlanes>
       </div>
 
-      <PymesProcess></PymesProcess>
+      <FeaturesSection></FeaturesSection>
+
+      <NuestroProcesoLocal></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
     </div>
