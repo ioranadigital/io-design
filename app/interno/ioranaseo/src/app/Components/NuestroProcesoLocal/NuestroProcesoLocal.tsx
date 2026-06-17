@@ -114,7 +114,7 @@ export default function NuestroProcesoLocal() {
                 opacity: 1,
                 padding: "20px 15px",
                 textAlign: "center",
-                backgroundColor: "rgba(255, 255, 255, 0.5)",
+                backgroundColor: "rgba(150, 150, 150, 0.12)",
                 borderRadius: "16px",
                 transition: "all 0.3s ease",
                 cursor: "pointer",
@@ -124,7 +124,7 @@ export default function NuestroProcesoLocal() {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor =
-                  "rgba(255, 255, 255, 0.5)";
+                  "rgba(150, 150, 150, 0.12)";
               }}
             >
               {/* Icon */}
