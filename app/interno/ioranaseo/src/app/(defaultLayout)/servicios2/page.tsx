@@ -1,9 +1,9 @@
 import React from "react";
-import BreadCumb from "../../../Components/Common/BreadCumb";
-import HeroBannerPlanes from "../../../Components/HeroBanner/HeroBannerPlanes";
-import PricingComparison from "../../../Components/PricingComparison/PricingComparison";
-import AuditoriaGratis from "../../../Components/AuditoriaGratis/AuditoriaGratis";
-import ContactIno3 from "../../../Components/ContactInfo/ContactIno3";
+import BreadCumb from "@/app/Components/Common/BreadCumb";
+import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
+import PricingComparison from "@/app/Components/PricingComparison/PricingComparison";
+import AuditoriaGratis from "@/app/Components/AuditoriaGratis/AuditoriaGratis";
+import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
 
 const ServiciosComparaPage = () => {
   return (
