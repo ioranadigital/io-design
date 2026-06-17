@@ -232,7 +232,7 @@ const ContactIno3: FC = () => {
         }
 
         #accordionContact .accordion-item.active {
-          background-color: #4D32A5 !important;
+          background-color: #9B8BC9 !important;
           transition: all 0.4s !important;
         }
 
