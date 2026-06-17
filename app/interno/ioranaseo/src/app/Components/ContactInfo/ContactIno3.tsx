@@ -184,9 +184,9 @@ const ContactIno3: FC = () => {
       </div>
       <style>{`
         #accordionContact .accordion-item {
-          border: 2px solid #D1D5DB !important;
+          border: 1px solid #D1D5DB !important;
           border-radius: 14px !important;
-          background-color: #F5F5FD !important;
+          background-color: #EDE9FE !important;
           margin-top: 16px !important;
           transition: all 0.4s !important;
         }
@@ -246,11 +246,11 @@ const ContactIno3: FC = () => {
         }
 
         #accordionContact .accordion-item.active .accordion-body {
-          color: #fff !important;
+          color: #4D32A5 !important;
         }
 
         #accordionContact .accordion-item.active button::after {
-          filter: brightness(0) invert(1) !important;
+          filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(1000%) hue-rotate(250deg) !important;
         }
 
         #accordionContact {
