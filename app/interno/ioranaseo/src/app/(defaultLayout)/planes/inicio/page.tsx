@@ -4,7 +4,6 @@ import HeroBannerPlanes from "../../../Components/HeroBanner/HeroBannerPlanes";
 import ContactIno3 from "../../../Components/ContactInfo/ContactIno3";
 import Work3 from "../../../Components/Work/Work3";
 import Service3 from "../../../Components/Services/Service3";
-import Faq1 from "../../../Components/Faq/Faq1";
 
 const PlanesInicio = () => {
   return (
@@ -30,8 +29,6 @@ const PlanesInicio = () => {
       ></Work3>
 
       <Service3></Service3>
-
-      <Faq1></Faq1>
 
       <ContactIno3></ContactIno3>
     </div>
