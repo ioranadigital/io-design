@@ -1,7 +1,7 @@
 import BreadCumb from "@/app/Components/Common/BreadCumb";
 import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
-import FeaturesCardsSection from "@/app/Components/Services/FeaturesCardsSection";
-import Work1 from "@/app/Components/Work/Work1";
+import Services6 from "@/app/Components/Services/Services6";
+import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
 import React from "react";
 
 const page = () => {
@@ -14,13 +14,14 @@ const page = () => {
 
       <HeroBannerPlanes
         subtitle="Servicios Digitales"
-        title="Potencia tu Presencia Online con Nuestros Servicios SEO"
-        content="Te ayudamos a posicionar tu sitio web en Google, aumentar tráfico orgánico y convertir visitantes en clientes con estrategias SEO comprobadas."
+        title="Servicios SEO y Marketing Digital para tu Negocio"
+        content="Ofrecemos soluciones digitales completas que te ayudan a posicionar tu marca, aumentar tráfico y convertir visitantes en clientes. Desde SEO hasta publicidad digital."
         img="/assets/img/hero/hero3-main-img.png"
       ></HeroBannerPlanes>
 
-      <FeaturesCardsSection></FeaturesCardsSection>
-      <Work1></Work1>
+      <Services6></Services6>
+
+      <ContactIno3></ContactIno3>
     </div>
   );
 };
