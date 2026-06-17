@@ -28,16 +28,16 @@ const MegaMenuServicios: FC<MegaMenuServiciosProps> = ({
               <ul className="mega-menu-links">
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/posicionamiento-google"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
-                    Presencia Digital en Google y en hasta 50 plataformas
+                    Presencia Digital en Google
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/seo-local-prueba"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
@@ -53,7 +53,7 @@ const MegaMenuServicios: FC<MegaMenuServiciosProps> = ({
               <ul className="mega-menu-links">
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/google-ads"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
@@ -62,7 +62,7 @@ const MegaMenuServicios: FC<MegaMenuServiciosProps> = ({
                 </li>
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/facebook-ads"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
@@ -81,16 +81,16 @@ const MegaMenuServicios: FC<MegaMenuServiciosProps> = ({
               <ul className="mega-menu-links">
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/pagina-web"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
-                    Páginas Web
+                    Diseñamos tu Página Web
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/tienda-online"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
@@ -106,11 +106,29 @@ const MegaMenuServicios: FC<MegaMenuServiciosProps> = ({
               <ul className="mega-menu-links">
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/contenidos"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
-                    Factura Electrónica
+                    Contenidos
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/servicios/whatsapp"
+                    onClick={handleLinkClick}
+                    className="mega-menu-link"
+                  >
+                    Notificaciones WhatsApp
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/servicios/reservas-online"
+                    onClick={handleLinkClick}
+                    className="mega-menu-link"
+                  >
+                    Reservas Online
                   </Link>
                 </li>
               </ul>
@@ -121,24 +139,24 @@ const MegaMenuServicios: FC<MegaMenuServiciosProps> = ({
           <div className="mega-menu-column">
             {/* Grupo Superior */}
             <div className="mega-menu-group">
-              <h3 className="mega-menu-title">Gestión de redes sociales</h3>
+              <h3 className="mega-menu-title">Branding y estrategia</h3>
               <ul className="mega-menu-links">
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/imagen-marca"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
-                    Herramienta de Gestión de Redes Sociales
+                    Imagen de Marca
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/service"
+                    href="/servicios/documentacion"
                     onClick={handleLinkClick}
                     className="mega-menu-link"
                   >
-                    Community Manager
+                    Documentación Controlada
                   </Link>
                 </li>
               </ul>
@@ -146,7 +164,7 @@ const MegaMenuServicios: FC<MegaMenuServiciosProps> = ({
 
             {/* Grupo Inferior */}
             <div className="mega-menu-group">
-              <h3 className="mega-menu-title">Otros servicios</h3>
+              <h3 className="mega-menu-title">Recursos</h3>
               <ul className="mega-menu-links">
                 <li>
                   <Link
