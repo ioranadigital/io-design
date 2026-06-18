@@ -9,8 +9,8 @@ import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
 const crmSteps = [
   {
     num: "01",
-    title: "Análisis de Procesos de Ventas",
-    body: "Mapeamos tu flujo actual de ventas para diseñar un CRM que optimice cada etapa del ciclo comercial.",
+    title: "Estrategia Personalizada",
+    body: "👥 Flujo de ventas optimizado para tu proceso · 📊 Campos personalizados según necesidades · 🎯 Métricas claras definidas",
     detail: "Process mapping · Sales flow · CRM selection",
     duration: "Semana 1",
     color: "#ff8c00",
@@ -18,8 +18,8 @@ const crmSteps = [
   },
   {
     num: "02",
-    title: "Implementación del CRM",
-    body: "Instalamos y configuramos tu CRM según tus necesidades específicas, campos personalizados e integraciones.",
+    title: "Resultados Rápidos",
+    body: "📈 Aumento en cierre de ventas del 30-40% · ⏱️ Tiempo de ciclo de ventas reducido · 💡 Datos de clientes centralizados",
     detail: "Setup · Customización · Integraciones",
     duration: "Semana 2-3",
     color: "#818cf8",
@@ -27,8 +27,8 @@ const crmSteps = [
   },
   {
     num: "03",
-    title: "Migración de Datos",
-    body: "Transferimos tus datos históricos de clientes al CRM de forma segura y con validación de integridad.",
+    title: "Garantía de Crecimiento",
+    body: "✅ Equipo de ventas más productivo · 📊 Reportes automáticos por ejecutivo · 🔄 Escalabilidad para crecer",
     detail: "Data migration · Limpieza · Validación",
     duration: "Semana 4",
     color: "#34d399",

@@ -9,8 +9,8 @@ import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
 const contenidosSteps = [
   {
     num: "01",
-    title: "Estrategia de Contenidos",
-    body: "Creamos un calendario editorial personalizado basado en tu industria, audiencia y palabras clave con mayor potencial.",
+    title: "Estrategia Personalizada",
+    body: "📝 Palabras clave con alto potencial de búsqueda · 📅 Calendario editorial 100% personalizado · 🎯 Temas que interesan a tu audiencia",
     detail: "Keyword research · Editorial calendar · Topics",
     duration: "Semana 1",
     color: "#ff8c00",
@@ -18,8 +18,8 @@ const contenidosSteps = [
   },
   {
     num: "02",
-    title: "Redacción SEO Optimizada",
-    body: "Escribimos contenido de calidad, optimizado para SEO que posiciona en Google y atrae a tu audiencia ideal.",
+    title: "Resultados Rápidos",
+    body: "📈 Tráfico orgánico en los primeros meses · 🏆 Posicionamiento en primera página de Google · 🎬 Contenido viral con engagement alto",
     detail: "Redacción · SEO optimization · Estructura",
     duration: "Semana 2-3",
     color: "#818cf8",
@@ -27,8 +27,8 @@ const contenidosSteps = [
   },
   {
     num: "03",
-    title: "Diseño y Maquetación",
-    body: "Damos formato profesional a cada contenido con imágenes, videos, infografías que aumentan engagement.",
+    title: "Garantía de Visibilidad",
+    body: "✅ Contenido que convierte lectores en clientes · 📊 Actualización y mejora continua · 🔄 Rankings que se mantienen",
     detail: "Diseño · Imágenes · Videos · Infografías",
     duration: "Semana 4",
     color: "#34d399",

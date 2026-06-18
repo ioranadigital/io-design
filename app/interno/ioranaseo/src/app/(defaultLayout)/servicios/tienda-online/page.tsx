@@ -9,8 +9,8 @@ import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
 const tiendaOnlineSteps = [
   {
     num: "01",
-    title: "Análisis y Estrategia",
-    body: "Analizamos tu catálogo de productos, competencia y objetivo de ventas para diseñar una tienda online optimizada.",
+    title: "Estrategia Personalizada",
+    body: "🛍️ Catálogo optimizado para vender más · 💳 Múltiples pasarelas de pago seguras · 📦 Gestión de inventario automática",
     detail: "Catálogo analysis · Segmentación · Roadmap",
     duration: "Semana 1",
     color: "#ff8c00",
@@ -18,8 +18,8 @@ const tiendaOnlineSteps = [
   },
   {
     num: "02",
-    title: "Configuración E-Commerce",
-    body: "Implementamos plataforma e-commerce segura con pasarelas de pago, inventario y gestión de órdenes automatizada.",
+    title: "Resultados Rápidos",
+    body: "📈 Primeras ventas en semanas · 🎯 Carrito de compra optimizado para no abandonos · 🔔 Notificaciones automáticas a clientes",
     detail: "Plataforma setup · Pagos · Integraciones",
     duration: "Semana 2-3",
     color: "#818cf8",
@@ -27,8 +27,8 @@ const tiendaOnlineSteps = [
   },
   {
     num: "03",
-    title: "Diseño y Experiencia",
-    body: "Creamos una tienda atractiva con experiencia de compra fluida que convierte navegantes en compradores.",
+    title: "Garantía de Ventas",
+    body: "✅ Tienda segura certificada SSL · 📊 Analytics detallado de cada venta · 💰 Margen de ganancia máximo garantizado",
     detail: "UX optimizada · Mobile friendly · Checkout rápido",
     duration: "Semana 4",
     color: "#34d399",

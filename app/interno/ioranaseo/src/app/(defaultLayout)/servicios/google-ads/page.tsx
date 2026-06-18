@@ -9,8 +9,8 @@ import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
 const googleAdsSteps = [
   {
     num: "01",
-    title: "Auditoría y Diagnóstico",
-    body: "Analizamos tu negocio, mercado y competencia para definir objetivos claros y presupuesto optimizado en Google Ads.",
+    title: "Estrategia Personalizada",
+    body: "🎯 Palabras clave de alta intención de compra · 💡 Segmentación por público objetivo · 📍 Ubicación y horarios optimizados",
     detail: "Auditoría · Palabras clave · Presupuesto inicial",
     duration: "Semana 1",
     color: "#ff8c00",
@@ -18,8 +18,8 @@ const googleAdsSteps = [
   },
   {
     num: "02",
-    title: "Configuración de Campañas",
-    body: "Creamos campañas segmentadas por objetivo: búsqueda, display, shopping. Cada una diseñada para máximas conversiones.",
+    title: "Resultados Rápidos",
+    body: "⚡ Tráfico calificado en 48 horas · 📞 Leads de calidad desde el primer día · 💰 ROI positivo en las primeras semanas",
     detail: "Campañas setup · Segmentación · Palabras clave",
     duration: "Semana 2",
     color: "#818cf8",
@@ -27,8 +27,8 @@ const googleAdsSteps = [
   },
   {
     num: "03",
-    title: "Landing Pages Optimizadas",
-    body: "Diseñamos landing pages que convierten tráfico de Google Ads en leads y ventas con tasas de conversión superiores.",
+    title: "Garantía de ROI",
+    body: "✅ Presupuesto invertido sabiamente en clientes reales · 📊 Reportes transparentes diarios · 🔄 Optimización continua",
     detail: "Landing pages · Conversion tracking · A/B testing",
     duration: "Semana 3",
     color: "#34d399",

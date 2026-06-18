@@ -9,8 +9,8 @@ import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
 const notificacionesWhatsappSteps = [
   {
     num: "01",
-    title: "Configuración de Cuenta",
-    body: "Configuramos tu cuenta de WhatsApp Business, número dedicado y acceso a API oficial de Meta.",
+    title: "Estrategia Personalizada",
+    body: "💬 Canal de comunicación directo con clientes · 📲 Número verificado listo para operar · 🔗 Integración con tus sistemas",
     detail: "Cuenta setup · Número verificado · API access",
     duration: "Semana 1",
     color: "#ff8c00",
@@ -18,8 +18,8 @@ const notificacionesWhatsappSteps = [
   },
   {
     num: "02",
-    title: "Integración con Sistemas",
-    body: "Integramos WhatsApp con tu CRM, ecommerce o sistema de tickets para automatizar notificaciones.",
+    title: "Resultados Rápidos",
+    body: "📈 Tasa de apertura de 98% de mensajes · 💰 Aumenta ventas en 30-40% · ⏱️ Respuestas automáticas 24/7",
     detail: "API integration · Webhooks · Testing",
     duration: "Semana 2",
     color: "#818cf8",
@@ -27,8 +27,8 @@ const notificacionesWhatsappSteps = [
   },
   {
     num: "03",
-    title: "Creación de Flujos Automatizados",
-    body: "Diseñamos flujos de notificación automática: confirmación de compra, seguimiento, recordatorios.",
+    title: "Garantía de Engagement",
+    body: "✅ Clientes conectados constantemente · 🤖 Chatbot inteligente operando · 📊 Métricas de conversación detalladas",
     detail: "Flujos · Mensajes · Plantillas",
     duration: "Semana 3",
     color: "#34d399",

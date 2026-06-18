@@ -9,8 +9,8 @@ import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
 const imagenMarcaSteps = [
   {
     num: "01",
-    title: "Descubrimiento de Marca",
-    body: "Analizamos profundamente tu negocio, valores, competencia y audiencia para definir la esencia de tu marca.",
+    title: "Estrategia Personalizada",
+    body: "🎨 Logo único que te diferencia de competencia · 💎 Identidad visual coherente y profesional · 🎯 Mensaje claro de tu negocio",
     detail: "Entrevistas · Análisis competitivo · Posicionamiento",
     duration: "Semana 1",
     color: "#ff8c00",
@@ -18,8 +18,8 @@ const imagenMarcaSteps = [
   },
   {
     num: "02",
-    title: "Diseño de Logo y Isologotipo",
-    body: "Creamos un logo único, memorable y versatile que represente tu marca en cualquier formato o tamaño.",
+    title: "Resultados Rápidos",
+    body: "✨ Logo profesional en 2-3 semanas · 🎭 Guía de marca completa lista · 📱 Aplicaciones en redes sociales inmediatas",
     detail: "Concepto · Variantes · Usos permitidos",
     duration: "Semana 2-3",
     color: "#818cf8",
@@ -27,8 +27,8 @@ const imagenMarcaSteps = [
   },
   {
     num: "03",
-    title: "Paleta de Colores y Tipografía",
-    body: "Desarrollamos paleta de colores y seleccionamos tipografías que reflejan tu personalidad de marca.",
+    title: "Garantía de Impacto",
+    body: "✅ Marca recordable y profesional garantizada · 🏢 Presencia consistente en todas plataformas · 💰 Valor agregado a tu negocio",
     detail: "Colores primarios · Secundarios · Tipografía",
     duration: "Semana 4",
     color: "#34d399",

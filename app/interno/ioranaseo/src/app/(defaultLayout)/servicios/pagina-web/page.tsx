@@ -10,7 +10,7 @@ const paginaWebSteps = [
   {
     num: "01",
     title: "Estrategia Personalizada",
-    body: "Analizamos tu negocio, competencia y objetivos para diseñar una página web que convierta visitantes en clientes.",
+    body: "🎨 Diseño único que refleja tu marca · 💡 Estructura optimizada para conversiones · 📱 Responsivo en todos los dispositivos",
     detail: "Análisis de negocio · UX/UI strategy · Wireframes",
     duration: "Semana 1",
     color: "#ff8c00",
@@ -18,8 +18,8 @@ const paginaWebSteps = [
   },
   {
     num: "02",
-    title: "Diseño Profesional",
-    body: "Creamos un diseño moderno, responsivo y atractivo que refleja la identidad de tu marca y atrae a tu audiencia.",
+    title: "Resultados Rápidos",
+    body: "⚡ Página web profesional en semanas, no meses · 📊 Seguimiento de visitantes desde el primer día · 🚀 Posicionamiento inmediato en Google",
     detail: "Diseño responsive · Brand guidelines · Mockups",
     duration: "Semana 2-3",
     color: "#818cf8",
@@ -27,8 +27,8 @@ const paginaWebSteps = [
   },
   {
     num: "03",
-    title: "Optimización SEO",
-    body: "Implementamos técnicas SEO desde el inicio para que tu página web posicione en buscadores y atraiga tráfico orgánico.",
+    title: "Garantía de Desempeño",
+    body: "✅ Página rápida y segura garantizada · 🔒 Soporte técnico 24/7 permanente · 📈 Optimización continua para más conversiones",
     detail: "On-page SEO · Performance · Indexación",
     duration: "Semana 4",
     color: "#34d399",
