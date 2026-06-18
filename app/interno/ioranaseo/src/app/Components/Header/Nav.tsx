@@ -157,7 +157,7 @@ const Nav: FC<NavProps> = ({ setMobileToggle }) => {
                   </li>
                   <li>
                     <Link
-                      href="/servicios/whatsapp"
+                      href="/servicios/notificaciones-whatsapp"
                       onClick={() => setMobileToggle(false)}
                     >
                       Notificaciones WhatsApp
