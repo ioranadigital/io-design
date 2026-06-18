@@ -10,25 +10,29 @@ const TiendaOnlinePage = () => {
     <div>
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
-        Title="Tienda Online (e-commerce)"
+        Title="Tienda Online"
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Servicios", href: "/servicios" },
-          { label: "Tienda Online (e-commerce)" },
+          { label: "Tienda Online" },
         ]}
       ></BreadCumb>
 
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">
         <HeroBannerPlanes
           subtitle="Servicios Digitales"
-          title="Tienda Online (e-commerce)"
+          title="Tienda Online : <span style='color: #4D32A5;'>E-Commerce</span>"
           content="Plataformas de e-commerce seguras y escalables. Vende productos online y multiplica tus ingresos con nuestra solución integral."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
         ></HeroBannerPlanes>
       </div>
 
-      <FeaturesSection></FeaturesSection>
+      <FeaturesSection
+        title="¿Por qué tener una"
+        titleHighlight="Tienda Online?"
+        description="Vender online es el futuro del comercio. Con una tienda online profesional, alcanzas clientes 24/7, aumentas tus ventas y escalas tu negocio sin límites geográficos."
+      ></FeaturesSection>
 
       <NuestroProcesoLocal></NuestroProcesoLocal>
 
