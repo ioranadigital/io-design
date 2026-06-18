@@ -11,6 +11,7 @@ interface HeroBannerPlanesProps {
   img: string;
   showBreadcrumb?: boolean;
   showImage?: boolean;
+  benefits?: string[];
 }
 
 const HeroBannerPlanes: FC<HeroBannerPlanesProps> = ({
@@ -20,6 +21,11 @@ const HeroBannerPlanes: FC<HeroBannerPlanesProps> = ({
   img,
   showBreadcrumb = true,
   showImage = true,
+  benefits = [
+    "Higher Conversion Rates",
+    "Increase Website Traffic",
+    "Local Market Dominance",
+  ],
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -67,118 +73,37 @@ const HeroBannerPlanes: FC<HeroBannerPlanesProps> = ({
                     flexWrap: "wrap",
                   }}
                 >
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      color: "#333",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                    }}
-                  >
+                  {benefits.map((benefit, index) => (
                     <span
+                      key={index}
                       style={{
-                        display: "flex",
+                        display: "inline-flex",
                         alignItems: "center",
-                        justifyContent: "center",
-                        width: "20px",
-                        height: "20px",
-                        borderRadius: "50%",
-                        backgroundColor: "#4D32A5",
-                        color: "#fff",
-                        fontSize: "12px",
-                        fontWeight: "bold",
+                        gap: "8px",
+                        color: "#333",
+                        fontSize: "14px",
+                        fontWeight: "500",
                       }}
                     >
-                      ✓
+                      <span
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          width: "20px",
+                          height: "20px",
+                          borderRadius: "50%",
+                          backgroundColor: "#4D32A5",
+                          color: "#fff",
+                          fontSize: "12px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        ✓
+                      </span>
+                      {benefit}
                     </span>
-                    Higher Conversion Rates
-                  </span>
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      color: "#333",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        width: "20px",
-                        height: "20px",
-                        borderRadius: "50%",
-                        backgroundColor: "#4D32A5",
-                        color: "#fff",
-                        fontSize: "12px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      ✓
-                    </span>
-                    Increase Website Traffic
-                  </span>
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      color: "#333",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        width: "20px",
-                        height: "20px",
-                        borderRadius: "50%",
-                        backgroundColor: "#4D32A5",
-                        color: "#fff",
-                        fontSize: "12px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      ✓
-                    </span>
-                    Local Market Dominance
-                  </span>
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      color: "#333",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        width: "20px",
-                        height: "20px",
-                        borderRadius: "50%",
-                        backgroundColor: "#4D32A5",
-                        color: "#fff",
-                        fontSize: "12px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      ✓
-                    </span>
-                    24/7 Promotion
-                  </span>
+                  ))}
                 </div>
                 <div
                   className="form-area"
