@@ -164,7 +164,7 @@ const GestionDocumentalPage = () => {
         title="Preguntas Frecuentes sobre Gestión Documental"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={gestionDocumentalFaq} />
     </div>
   );
 };

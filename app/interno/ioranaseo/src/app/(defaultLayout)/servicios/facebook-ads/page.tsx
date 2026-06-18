@@ -164,7 +164,7 @@ const FacebookAdsPage = () => {
         title="Preguntas Frecuentes sobre Facebook Ads"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={facebookAdsFaq} />
     </div>
   );
 };

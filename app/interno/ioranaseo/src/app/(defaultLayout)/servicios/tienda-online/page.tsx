@@ -164,7 +164,7 @@ const TiendaOnlinePage = () => {
         title="Preguntas Frecuentes sobre Tienda Online"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={tiendaOnlineFaq} />
     </div>
   );
 };

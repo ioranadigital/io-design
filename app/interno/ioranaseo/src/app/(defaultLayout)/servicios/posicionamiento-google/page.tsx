@@ -83,7 +83,7 @@ const PosicionamientoGooglePage = () => {
         title="Preguntas Frecuentes sobre Posicionamiento en Google"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={posicionamientoGoogleFaq} />
     </div>
   );
 };

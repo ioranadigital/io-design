@@ -164,7 +164,7 @@ const IAAutomatizacionesPage = () => {
         title="Preguntas Frecuentes sobre IA y Automatizaciones"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={iaAutomatizacionesFaq} />
     </div>
   );
 };

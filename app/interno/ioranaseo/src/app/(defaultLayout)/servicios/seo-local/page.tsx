@@ -164,7 +164,7 @@ const SeoLocalPruebaPage = () => {
         title="Preguntas Frecuentes sobre SEO Local"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={seoLocalFaq} />
     </div>
   );
 };

@@ -164,7 +164,7 @@ const ContenidosPage = () => {
         title="Preguntas Frecuentes sobre Generación de Contenidos"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={contenidosFaq} />
     </div>
   );
 };

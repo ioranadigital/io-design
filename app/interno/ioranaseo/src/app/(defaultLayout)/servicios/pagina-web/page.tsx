@@ -164,7 +164,7 @@ const PaginaWebPage = () => {
         title="Preguntas Frecuentes sobre Páginas Web"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={paginaWebFaq} />
     </div>
   );
 };

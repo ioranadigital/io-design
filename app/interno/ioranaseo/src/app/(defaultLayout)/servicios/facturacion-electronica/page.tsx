@@ -164,7 +164,7 @@ const FacturacionElectronicaPage = () => {
         title="Preguntas Frecuentes sobre Facturación Electrónica"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={facturacionElectronicaFaq} />
     </div>
   );
 };

@@ -164,7 +164,7 @@ const GoogleAdsPage = () => {
         title="Preguntas Frecuentes sobre Google Ads"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={googleAdsFaq} />
     </div>
   );
 };

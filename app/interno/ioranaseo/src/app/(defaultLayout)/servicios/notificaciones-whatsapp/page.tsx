@@ -164,7 +164,7 @@ const NotificacionesWhatsappPage = () => {
         title="Preguntas Frecuentes sobre Notificaciones WhatsApp"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={notificacionesWhatsappFaq} />
     </div>
   );
 };

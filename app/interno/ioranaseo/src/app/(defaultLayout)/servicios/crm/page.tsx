@@ -161,7 +161,7 @@ const CRMPage = () => {
 
       <Faq1 faqData={crmFaq} title="Preguntas Frecuentes sobre CRM" />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={crmFaq} />
     </div>
   );
 };

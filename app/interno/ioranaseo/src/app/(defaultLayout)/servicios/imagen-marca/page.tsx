@@ -164,7 +164,7 @@ const ImagenMarcaPage = () => {
         title="Preguntas Frecuentes sobre Imagen de Marca"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={imagenMarcaFaq} />
     </div>
   );
 };

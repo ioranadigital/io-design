@@ -164,7 +164,7 @@ const SistemaReservasOnlinePage = () => {
         title="Preguntas Frecuentes sobre Sistema de Reservas Online"
       />
 
-      <ContactIno3></ContactIno3>
+      <ContactIno3 faqData={sistemaReservasOnlineFaq} />
     </div>
   );
 };
