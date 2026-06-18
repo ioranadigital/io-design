@@ -21,14 +21,18 @@ const GoogleAdsPage = () => {
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">
         <HeroBannerPlanes
           subtitle="Servicios Digitales"
-          title="Campañas de Google Ads"
+          title="Campañas de <span style='color: #4D32A5;'>Google Ads</span>"
           content="Campañas publicitarias optimizadas que generan leads y ventas. ROI garantizado con gestión experta de presupuesto."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
         ></HeroBannerPlanes>
       </div>
 
-      <FeaturesSection></FeaturesSection>
+      <FeaturesSection
+        title="¿Vale la pena invertir en"
+        titleHighlight="Google Ads?"
+        description="Si quieres resultados inmediatos, Google Ads es tu mejor aliado. Aparece en los primeros resultados de búsqueda y atrae clientes listos para comprar hoy mismo."
+      ></FeaturesSection>
 
       <NuestroProcesoLocal></NuestroProcesoLocal>
 
