@@ -7,7 +7,7 @@ import Service3 from "../../../Components/Services/Service3";
 
 const AvanzadoPage = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#f5f5f5" }}>
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Planes y Precios"
