@@ -149,6 +149,8 @@ const SeoLocalPruebaPage = () => {
         titleHighlight="SEO Local?"
         description="El 76% de las búsquedas móviles tienen intención local. Si no apareces en los resultados locales, tus competidores capturan tus clientes. Posicionamiento local que convierte búsquedas en visitas a tu negocio."
         features={seoLocalFeatures}
+        imageSrc="/assets/img/seo-local-tablet-450.jpg"
+        imageAlt="SEO Local en tablet"
       ></FeaturesSection>
 
       <NuestroProcesoLocal

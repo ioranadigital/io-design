@@ -14,6 +14,8 @@ interface FeaturesSectionProps {
   titleHighlight?: string;
   description?: string;
   features?: Feature[];
+  imageSrc?: string;
+  imageAlt?: string;
 }
 
 const FeaturesSection: FC<FeaturesSectionProps> = ({
@@ -21,6 +23,8 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
   titleHighlight = "SEO Local?",
   description = "Somos especialistas en posicionar negocios locales en Google. Con más de 80 proyectos exitosos, sabemos exactamente qué funciona.",
   features: customFeatures,
+  imageSrc = "/assets/img/work/hombre-mujer-empreendedores-online.jpg",
+  imageAlt = "Profesionales de SEO Local",
 }) => {
   const defaultFeatures: Feature[] = [
     {
@@ -232,8 +236,8 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
               }}
             >
               <Image
-                src="/assets/img/work/hombre-mujer-empreendedores-online.jpg"
-                alt="Profesionales de SEO Local"
+                src={imageSrc}
+                alt={imageAlt}
                 width={400}
                 height={400}
                 style={{
