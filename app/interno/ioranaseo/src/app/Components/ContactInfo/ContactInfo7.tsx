@@ -12,8 +12,8 @@ interface ContactInfo7Props {
 
 const ContactInfo7: FC<ContactInfo7Props> = ({
   title = "Contáctanos IoranaSEO",
-  heading = "¿No Encontraste tu Respuesta? Solo Haz tus Preguntas",
-  description = "En IoranaSEO, entendemos que navegar por las complejidades del SEO y el marketing digital puede plantear numerosas preguntas. Aunque hemos cubierto una amplia gama de temas en nuestras Preguntas Frecuentes y comparaciones de planes SEO, reconocemos que cada negocio es único y es posible que tengas consultas específicas que no fueron abordadas.",
+  heading = "Contáctanos Hoy",
+  description = "Completa el formulario y nuestro equipo se pondrá en contacto contigo para discutir tus necesidades de SEO y marketing digital.",
   email = "seomax@gmail.com",
   phone = "+1 123 456 7890",
   buttonText = "Inicia tu Auditoría Gratis",
