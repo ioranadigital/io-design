@@ -3,7 +3,17 @@ import { useEffect, useRef, useState, FC } from "react";
 import data from "../../Data/faq.json";
 import SectionTitle2 from "../Common/SectionTitle2";
 
-const Faq1: FC = () => {
+interface FAQ {
+  title: string;
+  desc: string;
+}
+
+interface Faq1Props {
+  faqData?: FAQ[];
+  title?: string;
+}
+
+const Faq1: FC<Faq1Props> = ({ faqData, title = "Preguntas Frecuentes" }) => {
   const accordionContentRef = useRef(null);
   const [openItemIndex, setOpenItemIndex] = useState(-1);
   const [firstItemOpen, setFirstItemOpen] = useState(true);
@@ -30,14 +40,14 @@ const Faq1: FC = () => {
             <div className="heading3">
               <SectionTitle2
                 SubTitle="Preguntas Frecuentes"
-                Title="Preguntas Frecuentes"
+                Title={title}
               ></SectionTitle2>
             </div>
 
             <div className="space40"></div>
 
             <div className="accordion accordion1" id="accordionExample">
-              {data.map((item, index) => (
+              {(faqData || data).map((item, index) => (
                 <div
                   key={index}
                   className={`cs_accordian accordion-item ${index === openItemIndex ? "active" : ""}`}
