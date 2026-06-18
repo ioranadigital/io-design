@@ -5,8 +5,6 @@ import Service3 from "../Components/Services/Service3";
 import Work3 from "../Components/Work/Work3";
 import CaseStudy2 from "../Components/CaseStudy/CaseStudy2";
 import Pricing3 from "../Components/Pricing/Pricing3";
-import Testimonial3 from "../Components/Testimonial/Testimonial3";
-import Faq1 from "../Components/Faq/Faq1";
 import Blog2 from "../Components/Blog/Blog2";
 import ContactIno3 from "../Components/ContactInfo/ContactIno3";
 
@@ -39,8 +37,6 @@ const page = () => {
       <Work3></Work3>
       <CaseStudy2></CaseStudy2>
       <Pricing3></Pricing3>
-      <Testimonial3></Testimonial3>
-      <Faq1></Faq1>
       <Blog2></Blog2>
       <ContactIno3></ContactIno3>
     </div>
