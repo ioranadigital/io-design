@@ -149,6 +149,8 @@ const ContenidosPage = () => {
         titleHighlight="Contenidos es Estratégico?"
         description="El contenido es el corazón del marketing digital moderno. Estrategia de contenido bien ejecutada posiciona tu marca, atrae tráfico orgánico de calidad, genera confianza y convierte visitantes en clientes leales."
         features={contenidosFeatures}
+        imageSrc="/assets/img/contenidos-450.jpg"
+        imageAlt="Mujer redactando contenidos"
       ></FeaturesSection>
 
       <NuestroProcesoLocal
