@@ -14,9 +14,15 @@ interface BreadCumbProps {
   bgimg: string;
   Title: string;
   breadcrumbs?: BreadcrumbItem[];
+  breadcrumbBgColor?: string;
 }
 
-const BreadCumb: FC<BreadCumbProps> = ({ bgimg, Title, breadcrumbs }) => {
+const BreadCumb: FC<BreadCumbProps> = ({
+  bgimg,
+  Title,
+  breadcrumbs,
+  breadcrumbBgColor = "#ffffff",
+}) => {
   useEffect(() => {
     loadBackgroudImages();
   }, []);
@@ -37,7 +43,7 @@ const BreadCumb: FC<BreadCumbProps> = ({ bgimg, Title, breadcrumbs }) => {
     >
       <div
         className="breadcrumb-container"
-        style={{ padding: "0", backgroundColor: "#ffffff" }}
+        style={{ padding: "0", backgroundColor: breadcrumbBgColor }}
       >
         <div className="container">
           <BreadcrumbInline items={items} />
