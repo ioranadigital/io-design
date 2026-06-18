@@ -34,7 +34,11 @@ const ImagenMarcaPage = () => {
         description="Tu imagen de marca es tu primera impresión. Una identidad visual coherente y profesional genera confianza, diferencia tu negocio de la competencia y se queda en la mente de tus clientes."
       ></FeaturesSection>
 
-      <NuestroProcesoLocal></NuestroProcesoLocal>
+      <NuestroProcesoLocal
+        title="¿Cómo Trabajaremos en tu"
+        titleHighlight="Imagen de Marca?"
+        description="Proceso probado en más de 80 proyectos. Identidad visual que comunica y diferencia tu marca."
+      ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
     </div>
