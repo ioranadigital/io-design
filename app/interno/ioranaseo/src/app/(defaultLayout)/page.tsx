@@ -12,7 +12,7 @@ import ContactIno3 from "../Components/ContactInfo/ContactIno3";
 
 const page = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#ffffff" }}>
       <HeroBanner3
         subtitle="Estrategias Expertas con IoranaSEO"
         title="La Mejor Agencia de Marketing Digital"
