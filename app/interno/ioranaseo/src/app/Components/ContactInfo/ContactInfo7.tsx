@@ -1,7 +1,23 @@
 import Image from "next/image";
 import { FC } from "react";
 
-const ContactInfo7: FC = () => {
+interface ContactInfo7Props {
+  title?: string;
+  heading?: string;
+  description?: string;
+  email?: string;
+  phone?: string;
+  buttonText?: string;
+}
+
+const ContactInfo7: FC<ContactInfo7Props> = ({
+  title = "Contáctanos IoranaSEO",
+  heading = "¿No Encontraste tu Respuesta? Solo Haz tus Preguntas",
+  description = "En IoranaSEO, entendemos que navegar por las complejidades del SEO y el marketing digital puede plantear numerosas preguntas. Aunque hemos cubierto una amplia gama de temas en nuestras Preguntas Frecuentes y comparaciones de planes SEO, reconocemos que cada negocio es único y es posible que tengas consultas específicas que no fueron abordadas.",
+  email = "seomax@gmail.com",
+  phone = "+1 123 456 7890",
+  buttonText = "Inicia tu Auditoría Gratis",
+}) => {
   return (
     <div>
       <div className="faq-contact contact-page sp bg1">
@@ -18,19 +34,12 @@ const ContactInfo7: FC = () => {
                       width={20}
                       height={20}
                     />
-                    Contáctanos IoranaSEO
+                    {title}
                   </span>
                 </p>
-                <h2>¿No Encontraste tu Respuesta? Solo Haz tus Preguntas</h2>
+                <h2>{heading}</h2>
                 <div className="space16"></div>
-                <p>
-                  En IoranaSEO, entendemos que navegar por las complejidades del
-                  SEO y el marketing digital puede plantear numerosas preguntas.
-                  Aunque hemos cubierto una amplia gama de temas en nuestras
-                  Preguntas Frecuentes y comparaciones de planes SEO,
-                  reconocemos que cada negocio es único y es posible que tengas
-                  consultas específicas que no fueron abordadas.
-                </p>
+                <p>{description}</p>
 
                 <div className="faq-contact-boxs">
                   <div className="row">
@@ -46,7 +55,7 @@ const ContactInfo7: FC = () => {
                         </div>
                         <div className="heading">
                           <h6>Nuestro Correo</h6>
-                          <a href="mailto:seomax@gmail.com">seomax@gmail.com</a>
+                          <a href={`mailto:${email}`}>{email}</a>
                         </div>
                       </div>
                     </div>
@@ -62,7 +71,7 @@ const ContactInfo7: FC = () => {
                         </div>
                         <div className="heading">
                           <h6>Teléfono</h6>
-                          <a href="tel:+11234567890">+1 123 456 7890</a>
+                          <a href={`tel:${phone}`}>{phone}</a>
                         </div>
                       </div>
                     </div>
@@ -112,7 +121,7 @@ const ContactInfo7: FC = () => {
                       <div className="space30"></div>
                       <div className="button">
                         <button className="theme-btn2">
-                          Inicia tu Auditoría Gratis{" "}
+                          {buttonText}{" "}
                           <span>
                             <i className="bi bi-arrow-right"></i>
                           </span>
