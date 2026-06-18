@@ -35,7 +35,12 @@ const HeroBannerPlanes: FC<HeroBannerPlanesProps> = ({
     <>
       <div
         className="hero2 hero-planes"
-        style={{ minHeight: "600px", margin: "0", padding: "0" }}
+        style={{
+          minHeight: "600px",
+          margin: "0",
+          padding: "0",
+          marginTop: "0",
+        }}
       >
         <div className="container">
           <div className="row align-items-center" style={{ margin: "0" }}>
