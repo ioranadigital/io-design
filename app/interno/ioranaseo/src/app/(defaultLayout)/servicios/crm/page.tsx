@@ -4,7 +4,6 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -158,8 +157,6 @@ const CRMPage = () => {
         description="Proceso probado en más de 80 proyectos. Sistema relacional que crece con tu negocio."
         steps={crmSteps}
       ></NuestroProcesoLocal>
-
-      <Faq1 faqData={crmFaq} title="Preguntas Frecuentes sobre CRM" />
 
       <ContactIno3 faqData={crmFaq} />
     </div>

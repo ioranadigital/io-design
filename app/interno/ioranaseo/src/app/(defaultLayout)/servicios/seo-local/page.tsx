@@ -4,7 +4,6 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -158,11 +157,6 @@ const SeoLocalPruebaPage = () => {
         description="Estrategia probada en más de 80 empresas locales. Resultados visibles en las primeras semanas."
         steps={seoLocalSteps}
       ></NuestroProcesoLocal>
-
-      <Faq1
-        faqData={seoLocalFaq}
-        title="Preguntas Frecuentes sobre SEO Local"
-      />
 
       <ContactIno3 faqData={seoLocalFaq} />
     </div>

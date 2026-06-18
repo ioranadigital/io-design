@@ -4,7 +4,6 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -158,11 +157,6 @@ const ContenidosPage = () => {
         description="Proceso probado en más de 80 proyectos. Contenido optimizado que posiciona en Google y genera resultados."
         steps={contenidosSteps}
       ></NuestroProcesoLocal>
-
-      <Faq1
-        faqData={contenidosFaq}
-        title="Preguntas Frecuentes sobre Generación de Contenidos"
-      />
 
       <ContactIno3 faqData={contenidosFaq} />
     </div>

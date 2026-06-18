@@ -4,7 +4,6 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -158,11 +157,6 @@ const FacebookAdsPage = () => {
         description="Proceso probado en más de 80 proyectos. Estrategia de segmentación y optimización para máximo retorno."
         steps={facebookAdsSteps}
       ></NuestroProcesoLocal>
-
-      <Faq1
-        faqData={facebookAdsFaq}
-        title="Preguntas Frecuentes sobre Facebook Ads"
-      />
 
       <ContactIno3 faqData={facebookAdsFaq} />
     </div>

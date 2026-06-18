@@ -4,7 +4,6 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -158,11 +157,6 @@ const NotificacionesWhatsappPage = () => {
         description="Proceso probado en más de 80 proyectos. Sistema de notificaciones que conecta con tus clientes."
         steps={notificacionesWhatsappSteps}
       ></NuestroProcesoLocal>
-
-      <Faq1
-        faqData={notificacionesWhatsappFaq}
-        title="Preguntas Frecuentes sobre Notificaciones WhatsApp"
-      />
 
       <ContactIno3 faqData={notificacionesWhatsappFaq} />
     </div>

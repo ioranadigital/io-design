@@ -4,7 +4,6 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import Faq1 from "@/app/Components/Faq/Faq1";
 
 const posicionamientoGoogleBenefits = [
   "Tráfico Orgánico Gratuito",
@@ -77,11 +76,6 @@ const PosicionamientoGooglePage = () => {
         titleHighlight="visibilidad en google"
         description="Estrategia comprobada en más de 80 empresas. Posicionamiento real, resultados reales."
       ></NuestroProcesoLocal>
-
-      <Faq1
-        faqData={posicionamientoGoogleFaq}
-        title="Preguntas Frecuentes sobre Posicionamiento en Google"
-      />
 
       <ContactIno3 faqData={posicionamientoGoogleFaq} />
     </div>
