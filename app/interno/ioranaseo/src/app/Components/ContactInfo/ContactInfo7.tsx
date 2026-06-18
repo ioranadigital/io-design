@@ -20,7 +20,10 @@ const ContactInfo7: FC<ContactInfo7Props> = ({
 }) => {
   return (
     <div>
-      <div className="faq-contact contact-page sp bg1">
+      <div
+        className="faq-contact contact-page sp bg1"
+        style={{ marginTop: "-50px" }}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
