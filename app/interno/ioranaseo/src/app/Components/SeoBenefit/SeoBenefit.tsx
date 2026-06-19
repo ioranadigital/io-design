@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const SeoBenefit: FC = () => {
@@ -11,7 +12,7 @@ const SeoBenefit: FC = () => {
               <p className="title">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={21}
@@ -78,7 +79,7 @@ const SeoBenefit: FC = () => {
                   </svg>
                 </div>
                 <div className="image2">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/service/service-details-stape1.png"
                     alt="img"
                     width={400}
@@ -86,7 +87,7 @@ const SeoBenefit: FC = () => {
                   />
                 </div>
                 <div className="image3">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/shapes/service-details-stape-shape.png"
                     alt="img"
                     width={209}
@@ -183,7 +184,7 @@ const SeoBenefit: FC = () => {
                   </svg>
                 </div>
                 <div className="image2">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/service/service-details-stape2.png"
                     alt="img"
                     width={400}
@@ -191,7 +192,7 @@ const SeoBenefit: FC = () => {
                   />
                 </div>
                 <div className="image3 image3-shape2">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/shapes/service-details-stape-shape.png"
                     alt="img"
                     width={209}
@@ -257,7 +258,7 @@ const SeoBenefit: FC = () => {
                   </svg>
                 </div>
                 <div className="image2">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/service/service-details-stape3.png"
                     alt="img"
                     width={400}
@@ -265,7 +266,7 @@ const SeoBenefit: FC = () => {
                   />
                 </div>
                 <div className="image3">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/shapes/service-details-stape-shape.png"
                     alt="img"
                     width={209}

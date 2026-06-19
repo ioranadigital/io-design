@@ -1,5 +1,6 @@
+"use client";
 import parse from "html-react-parser";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface HeroBanner3Props {
@@ -30,7 +31,7 @@ const HeroBanner3: FC<HeroBanner3Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/main-span3.svg"
                     alt="img"
                     width={20}
@@ -70,20 +71,20 @@ const HeroBanner3: FC<HeroBanner3Props> = ({
               data-aos-duration="700"
             >
               <div className="shape1 animate1">
-                <Image src={img1} alt="img" width={160} height={160} />
+                <OptimizedImage src={img1} alt="img" width={160} height={160} />
               </div>
               <div className="shape2 animate3">
-                <Image src={img2} alt="img" width={225} height={196} />
+                <OptimizedImage src={img2} alt="img" width={225} height={196} />
               </div>
               <div className="main-img">
-                <Image src={img3} alt="img" width={552} height={530} />
+                <OptimizedImage src={img3} alt="img" width={552} height={530} />
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="image1">
-        <Image src={img4} alt="img" width={752} height={748} />
+        <OptimizedImage src={img4} alt="img" width={752} height={748} />
       </div>
     </div>
   );

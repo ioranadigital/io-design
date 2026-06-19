@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -32,7 +33,7 @@ const About1: FC<About1Props> = ({
           <div className="col-lg-6">
             <div className="images-all">
               <div className="shape-bg1">
-                <Image
+                <OptimizedImage
                   src="/assets/img/shapes/about1-bg-shape.png"
                   alt="img"
                   width={782}
@@ -85,21 +86,21 @@ const About1: FC<About1Props> = ({
                 </svg>
               </div>
               <div className="image1">
-                <Image src={img1} alt="img" width={506} height={499} />
+                <OptimizedImage src={img1} alt="img" width={506} height={499} />
               </div>
               <div
                 className="image2 animate1"
                 data-aos="fade-left"
                 data-aos-duration="800"
               >
-                <Image src={img2} alt="img" width={350} height={242} />
+                <OptimizedImage src={img2} alt="img" width={350} height={242} />
               </div>
               <div
                 className="image3 animate3"
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                <Image src={img3} alt="img" width={430} height={227} />
+                <OptimizedImage src={img3} alt="img" width={430} height={227} />
               </div>
             </div>
           </div>
@@ -108,7 +109,7 @@ const About1: FC<About1Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/main-span3.svg"
                     alt="img"
                     width={20}

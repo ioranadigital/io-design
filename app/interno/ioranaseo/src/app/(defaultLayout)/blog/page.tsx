@@ -1,9 +1,12 @@
+"use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
 import Blog2 from "@/app/Components/Blog/Blog2";
 import BreadCumb from "@/app/Components/Common/BreadCumb";
 import ContactInfo4 from "@/app/Components/ContactInfo/ContactInfo4";
 import React from "react";
 
 const page = () => {
+  useWebVitalsTracker();
   return (
     <div>
       <BreadCumb

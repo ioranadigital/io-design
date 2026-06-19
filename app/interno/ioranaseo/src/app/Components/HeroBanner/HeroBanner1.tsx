@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 interface HeroBanner1Props {
   subtitle: string;
@@ -43,7 +43,7 @@ const HeroBanner1: FC<HeroBanner1Props> = ({
                 data-aos="fade-left"
                 data-aos-duration="800"
               >
-                <Image
+                <OptimizedImage
                   src="/assets/img/icons/main-span1.svg"
                   alt="img"
                   width={20}
@@ -88,10 +88,15 @@ const HeroBanner1: FC<HeroBanner1Props> = ({
               data-aos-duration="700"
             >
               <div className="image1">
-                <Image src={shape1} alt="img" width={666} height={696} />
+                <OptimizedImage
+                  src={shape1}
+                  alt="img"
+                  width={666}
+                  height={696}
+                />
               </div>
               <div className="image2">
-                <Image src={img1} alt="img" width={609} height={636} />
+                <OptimizedImage src={img1} alt="img" width={609} height={636} />
               </div>
               <div
                 className="shapes shape1 animate4"
@@ -99,7 +104,7 @@ const HeroBanner1: FC<HeroBanner1Props> = ({
                 data-aos-duration="700"
               >
                 <div className="icon">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/hero1-icon1.svg"
                     alt="img"
                     width={34}
@@ -114,7 +119,12 @@ const HeroBanner1: FC<HeroBanner1Props> = ({
                 data-aos="flip-right"
                 data-aos-duration="700"
               >
-                <Image src={shape2} alt="img" width={120} height={120} />
+                <OptimizedImage
+                  src={shape2}
+                  alt="img"
+                  width={120}
+                  height={120}
+                />
               </div>
 
               <div
@@ -123,7 +133,7 @@ const HeroBanner1: FC<HeroBanner1Props> = ({
                 data-aos-duration="700"
               >
                 <div className="icon">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/hero1-icon2.svg"
                     alt="img"
                     width={34}
@@ -139,7 +149,7 @@ const HeroBanner1: FC<HeroBanner1Props> = ({
                 data-aos-duration="700"
               >
                 <div className="icon">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/hero1-icon3.svg"
                     alt="img"
                     width={32}

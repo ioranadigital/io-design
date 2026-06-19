@@ -1,5 +1,6 @@
+"use client";
 import parse from "html-react-parser";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface HeroBanner2Props {
@@ -32,7 +33,7 @@ const HeroBanner2: FC<HeroBanner2Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={21}
@@ -72,23 +73,38 @@ const HeroBanner2: FC<HeroBanner2Props> = ({
               data-aos-duration="700"
             >
               <div className="shape1 animate1">
-                <Image src={shape1} alt="img" width={300} height={242} />
+                <OptimizedImage
+                  src={shape1}
+                  alt="img"
+                  width={300}
+                  height={242}
+                />
               </div>
               <div className="shape2 animate3">
-                <Image src={shape2} alt="img" width={480} height={363} />
+                <OptimizedImage
+                  src={shape2}
+                  alt="img"
+                  width={480}
+                  height={363}
+                />
               </div>
               <div className="shape3 animate2">
-                <Image src={shape3} alt="img" width={179} height={179} />
+                <OptimizedImage
+                  src={shape3}
+                  alt="img"
+                  width={179}
+                  height={179}
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="image1">
-        <Image src={img1} alt="img" width={914} height={748} />
+        <OptimizedImage src={img1} alt="img" width={914} height={748} />
       </div>
       <div className="image2">
-        <Image src={img2} alt="img" width={186} height={693} />
+        <OptimizedImage src={img2} alt="img" width={186} height={693} />
       </div>
     </div>
   );

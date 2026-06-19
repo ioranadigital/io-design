@@ -2,7 +2,7 @@
 import { useRef, FC } from "react";
 import Slider from "react-slick";
 import data from "../../Data/testimonial2.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const Testimonial7: FC = () => {
   const sliderRef = useRef<any>(null);
@@ -54,7 +54,7 @@ const Testimonial7: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/span5.svg"
                     alt="img"
                     width={20}
@@ -103,7 +103,7 @@ const Testimonial7: FC = () => {
                         <div className="bottom">
                           <div className="info">
                             <div className="image">
-                              <Image
+                              <OptimizedImage
                                 src={item.img}
                                 alt="img"
                                 width={61}
@@ -140,7 +140,7 @@ const Testimonial7: FC = () => {
           <div className="col-lg-5">
             <div className="iamge-slider">
               <div className="image">
-                <Image
+                <OptimizedImage
                   src="/assets/img/testimonial/tes5-img.png"
                   alt="img"
                   width={385}

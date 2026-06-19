@@ -4,7 +4,7 @@ import data from "../../Data/services2.json";
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Link from "next/link";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const Service3: FC = () => {
   useEffect(() => {

@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const TableAnalysis: FC = () => {
@@ -11,7 +12,7 @@ const TableAnalysis: FC = () => {
               <p className="title">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={21}

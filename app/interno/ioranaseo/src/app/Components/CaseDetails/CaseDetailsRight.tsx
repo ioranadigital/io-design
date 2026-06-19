@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState, FC } from "react";
 import data from "../../Data/faq.json";
 import Link from "next/link";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const CaseDetailsRight: FC = () => {
   const accordionContentRef = useRef(null);
@@ -32,7 +32,7 @@ const CaseDetailsRight: FC = () => {
               <article>
                 <div className="details-post-single">
                   <div className="image image-anime">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/case/case-details-img1.png"
                       alt="img"
                       width={826}
@@ -112,7 +112,7 @@ const CaseDetailsRight: FC = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="image image-anime">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/case/case-details-img2.png"
                           alt="img"
                           width={401}
@@ -123,7 +123,7 @@ const CaseDetailsRight: FC = () => {
 
                     <div className="col-md-6">
                       <div className="image image-anime">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/case/case-details-img3.png"
                           alt="img"
                           width={401}
@@ -291,7 +291,7 @@ const CaseDetailsRight: FC = () => {
                 <h3>If You Need Any SEO And Digital Marketing Help ?</h3>
                 <div className="phone-btn">
                   <a href="tel:(123)3344567890">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/details-call-icon.svg"
                       alt="img"
                       width={24}

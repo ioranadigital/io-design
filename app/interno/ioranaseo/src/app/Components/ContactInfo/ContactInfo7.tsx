@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface ContactInfo7Props {
@@ -34,7 +35,7 @@ const ContactInfo7: FC<ContactInfo7Props> = ({
                 <p className="title">
                   {" "}
                   <span className="span">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/logo/main-span3.svg"
                       alt="img"
                       width={20}
@@ -52,7 +53,7 @@ const ContactInfo7: FC<ContactInfo7Props> = ({
                     <div className="col-lg-6">
                       <div className="single-box">
                         <div className="icon">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/contact-icon1.svg"
                             alt="img"
                             width={33}
@@ -68,7 +69,7 @@ const ContactInfo7: FC<ContactInfo7Props> = ({
                     <div className="col-lg-6">
                       <div className="single-box">
                         <div className="icon">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/contact-icon2.svg"
                             alt="img"
                             width={32}

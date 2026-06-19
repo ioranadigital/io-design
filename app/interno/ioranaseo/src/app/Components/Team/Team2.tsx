@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import data from "../../Data/team1.json";
 import { FC } from "react";
 
@@ -15,7 +16,12 @@ const Team2: FC = () => {
                 data-aos-duration="700"
               >
                 <div className="image image-anime">
-                  <Image src={item.img} alt="img" width={416} height={382} />
+                  <OptimizedImage
+                    src={item.img}
+                    alt="img"
+                    width={416}
+                    height={382}
+                  />
                 </div>
                 <div className="heading-area">
                   <div className="heading1">
@@ -26,7 +32,7 @@ const Team2: FC = () => {
                   </div>
                   <div className="icon-area">
                     <a href="#" className="icon">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/shere.svg"
                         alt="img"
                         width={24}

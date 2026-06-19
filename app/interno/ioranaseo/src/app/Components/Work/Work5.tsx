@@ -2,7 +2,7 @@
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Slider from "react-slick";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const Work5: FC = () => {
   useEffect(() => {
@@ -52,7 +52,7 @@ const Work5: FC = () => {
                 <p className="title">
                   {" "}
                   <span className="span">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/span1-w.svg"
                       alt="img"
                       width={20}
@@ -65,9 +65,11 @@ const Work5: FC = () => {
               </div>
             </div>
           </div>
-          <img
+          <OptimizedImage
             src="/assets/img/team/about-team-main.png"
-            alt=""
+            alt="Team main image"
+            width={1200}
+            height={600}
             className="main-img"
           />
         </div>
@@ -82,7 +84,7 @@ const Work5: FC = () => {
               <div className="team-logo-slider owl-carousel">
                 <Slider {...settings}>
                   <div className="single-logo">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/logo/about-team-logo1.png"
                       alt="img1"
                       width={120}
@@ -90,7 +92,7 @@ const Work5: FC = () => {
                     />
                   </div>
                   <div className="single-logo">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/logo/about-team-logo2.png"
                       alt="img1"
                       width={120}
@@ -98,7 +100,7 @@ const Work5: FC = () => {
                     />
                   </div>
                   <div className="single-logo">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/logo/about-team-logo3.png"
                       alt="img1"
                       width={120}
@@ -106,7 +108,7 @@ const Work5: FC = () => {
                     />
                   </div>
                   <div className="single-logo">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/logo/about-team-logo1.png"
                       alt="img1"
                       width={120}
@@ -114,7 +116,7 @@ const Work5: FC = () => {
                     />
                   </div>
                   <div className="single-logo">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/logo/about-team-logo2.png"
                       alt="img1"
                       width={120}
@@ -122,7 +124,7 @@ const Work5: FC = () => {
                     />
                   </div>
                   <div className="single-logo">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/logo/about-team-logo3.png"
                       alt="img1"
                       width={120}

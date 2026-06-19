@@ -1,7 +1,7 @@
 "use client";
 import { useState, FC } from "react";
 import ServiceCard from "../Card/ServiceCard";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const Service2: FC = () => {
   const [isActive, setIsActive] = useState("tab2");
@@ -15,7 +15,7 @@ const Service2: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={21}
@@ -57,7 +57,7 @@ const Service2: FC = () => {
                       aria-selected="true"
                     >
                       <span className="icon">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/service2-icon1.svg"
                           alt="img"
                           width={37}
@@ -87,7 +87,7 @@ const Service2: FC = () => {
                       aria-selected="false"
                     >
                       <span className="icon">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/service2-icon2.svg"
                           alt="img"
                           width={36}
@@ -117,7 +117,7 @@ const Service2: FC = () => {
                       aria-selected="false"
                     >
                       <span className="icon">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/service2-icon3.svg"
                           alt="img"
                           width={40}
@@ -147,7 +147,7 @@ const Service2: FC = () => {
                       aria-selected="false"
                     >
                       <span className="icon">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/service2-icon4.svg"
                           alt="img"
                           width={36}

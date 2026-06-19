@@ -1,6 +1,6 @@
 "use client";
 import { CheckCircle, Zap, Award } from "lucide-react";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface Feature {
@@ -235,7 +235,7 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
                 boxShadow: "0 10px 30px rgba(77, 50, 165, 0.2)",
               }}
             >
-              <Image
+              <OptimizedImage
                 src={imageSrc}
                 alt={imageAlt}
                 width={450}

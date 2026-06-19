@@ -1,5 +1,6 @@
+"use client";
 import parse from "html-react-parser";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface SectionTitle2Props {
@@ -13,7 +14,7 @@ const SectionTitle2: FC<SectionTitle2Props> = ({ Title, SubTitle }) => {
       <p className="title" data-aos="fade-left" data-aos-duration="800">
         {" "}
         <span className="span">
-          <Image
+          <OptimizedImage
             src="/assets/img/logo/main-span3.svg"
             alt="img"
             width={20}

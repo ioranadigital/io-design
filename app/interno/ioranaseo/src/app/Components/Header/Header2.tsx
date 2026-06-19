@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, FC } from "react";
 import Nav from "./Nav";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 
 interface Header2Props {
@@ -46,7 +46,7 @@ const Header2: FC<Header2Props> = ({ variant }) => {
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
               <Link href="/" className="cs_site_branding">
-                <Image
+                <OptimizedImage
                   src="/assets/img/logo/header-logo3.png"
                   alt="img"
                   width={130}

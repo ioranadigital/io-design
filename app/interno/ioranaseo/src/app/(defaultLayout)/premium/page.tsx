@@ -1,3 +1,5 @@
+"use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
 import React from "react";
 import BreadCumb from "../../Components/Common/BreadCumb";
 import HeroBannerPlanes from "../../Components/HeroBanner/HeroBannerPlanes";
@@ -7,6 +9,7 @@ import Service3 from "../../Components/Services/Service3";
 import Faq1 from "../../Components/Faq/Faq1";
 
 const PremiumPage = () => {
+  useWebVitalsTracker();
   return (
     <div>
       <BreadCumb

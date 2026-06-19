@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import PricingCard3 from "../Card/PricingCard3";
 import { FC } from "react";
 
@@ -12,7 +13,7 @@ const Pricing5: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/span5.svg"
                     alt="img"
                     width={20}

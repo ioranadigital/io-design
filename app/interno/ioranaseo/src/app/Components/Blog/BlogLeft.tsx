@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import data from "../../Data/blog2.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const BlogLeft: FC = () => {
@@ -117,7 +118,7 @@ const BlogLeft: FC = () => {
                 <div className="blog-writers">
                   <ul>
                     <li>
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/blog/blog-writer1.png"
                         alt="img"
                         width={56}
@@ -125,7 +126,7 @@ const BlogLeft: FC = () => {
                       />
                     </li>
                     <li>
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/blog/blog-writer2.png"
                         alt="img"
                         width={56}
@@ -133,7 +134,7 @@ const BlogLeft: FC = () => {
                       />
                     </li>
                     <li>
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/blog/blog-writer3.png"
                         alt="img"
                         width={56}
@@ -141,7 +142,7 @@ const BlogLeft: FC = () => {
                       />
                     </li>
                     <li>
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/blog/blog-writer4.png"
                         alt="img"
                         width={56}
@@ -149,7 +150,7 @@ const BlogLeft: FC = () => {
                       />
                     </li>
                     <li>
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/blog/blog-writer5.png"
                         alt="img"
                         width={56}
@@ -164,7 +165,7 @@ const BlogLeft: FC = () => {
                 <h3>If You Need Any SEO And Digital Marketing Help ?</h3>
                 <div className="phone-btn">
                   <a href="tel:(123)3344567890">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/details-call-icon.svg"
                       alt="img"
                       width={24}
@@ -183,7 +184,7 @@ const BlogLeft: FC = () => {
                 <div key={i} className="col-md-6">
                   <div className="blog-box">
                     <div className="image image-anime">
-                      <Image
+                      <OptimizedImage
                         src={item.img}
                         alt="img"
                         width={401}
@@ -193,7 +194,7 @@ const BlogLeft: FC = () => {
                     <div className="heading1">
                       <div className="author-area">
                         <a href="#" className="date">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/author.svg"
                             alt="img"
                             width={20}
@@ -202,7 +203,7 @@ const BlogLeft: FC = () => {
                           Alex Roy
                         </a>
                         <a href="#" className="date">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/date.svg"
                             alt="img"
                             width={20}

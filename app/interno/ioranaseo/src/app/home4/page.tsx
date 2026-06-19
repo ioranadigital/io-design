@@ -1,3 +1,5 @@
+"use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
 import React from "react";
 import HeroBanner4 from "../Components/HeroBanner/HeroBanner4";
 import About1 from "../Components/About/About1";
@@ -11,6 +13,7 @@ import Faq4 from "../Components/Faq/Faq4";
 import Blog4 from "../Components/Blog/Blog4";
 
 const page = () => {
+  useWebVitalsTracker();
   return (
     <div>
       <HeroBanner4

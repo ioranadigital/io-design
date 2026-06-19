@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import data from "../../Data/counter.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface About3Props {
@@ -36,7 +37,7 @@ const About3: FC<About3Props> = ({
                   >
                     <div className="about3-box">
                       <div className="icon">
-                        <Image
+                        <OptimizedImage
                           src={item.img}
                           alt="img"
                           width={44}
@@ -58,7 +59,7 @@ const About3: FC<About3Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/main-span3.svg"
                     alt="img"
                     width={20}

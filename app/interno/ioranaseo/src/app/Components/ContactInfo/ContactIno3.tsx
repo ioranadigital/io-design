@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, FC, useState, useRef } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import data from "../../Data/faq.json";
 
 interface FAQ {

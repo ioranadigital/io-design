@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import data from "../../Data/blog2.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const Blog3: FC = () => {
@@ -12,12 +13,17 @@ const Blog3: FC = () => {
             <div key={i} className="col-lg-4 col-md-6">
               <div className="blog-box">
                 <div className="image image-anime">
-                  <Image src={item.img} alt="img" width={416} height={315} />
+                  <OptimizedImage
+                    src={item.img}
+                    alt="img"
+                    width={416}
+                    height={315}
+                  />
                 </div>
                 <div className="heading1">
                   <div className="author-area">
                     <a href="#" className="date">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/author.svg"
                         alt="img"
                         width={20}
@@ -26,7 +32,7 @@ const Blog3: FC = () => {
                       Alex Roy
                     </a>
                     <a href="#" className="date">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/date.svg"
                         alt="img"
                         width={20}

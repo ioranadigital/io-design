@@ -4,7 +4,7 @@ import SectionTitle from "../Common/SectionTitle";
 import data from "../../Data/casestudy1.json";
 import { useRef, FC } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const CaseStudy1: FC = () => {
   const sliderRef = useRef<any>(null);
@@ -86,7 +86,7 @@ const CaseStudy1: FC = () => {
                 {data.map((item, i) => (
                   <div key={i} className="single-slider">
                     <div className="image">
-                      <Image
+                      <OptimizedImage
                         src={item.img}
                         alt="img"
                         width={412}

@@ -1,5 +1,6 @@
+"use client";
 import parse from "html-react-parser";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface HeroBanner5Props {
@@ -32,7 +33,7 @@ const HeroBanner5: FC<HeroBanner5Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/span5.svg"
                     alt="img"
                     width={20}
@@ -68,19 +69,34 @@ const HeroBanner5: FC<HeroBanner5Props> = ({
           <div className="col-lg-6">
             <div className="main-images">
               <div className="image1">
-                <Image src={img1} alt="img" width={471} height={472} />
+                <OptimizedImage src={img1} alt="img" width={471} height={472} />
               </div>
               <div className="image2 round-circle">
-                <Image src={img2} alt="img" width={608} height={604} />
+                <OptimizedImage src={img2} alt="img" width={608} height={604} />
               </div>
               <div className="shape1 animate1">
-                <Image src={shape1} alt="img" width={180} height={100} />
+                <OptimizedImage
+                  src={shape1}
+                  alt="img"
+                  width={180}
+                  height={100}
+                />
               </div>
               <div className="shape2 animate2">
-                <Image src={shape2} alt="img" width={180} height={99} />
+                <OptimizedImage
+                  src={shape2}
+                  alt="img"
+                  width={180}
+                  height={99}
+                />
               </div>
               <div className="shape3">
-                <Image src={shape3} alt="img" width={180} height={99} />
+                <OptimizedImage
+                  src={shape3}
+                  alt="img"
+                  width={180}
+                  height={99}
+                />
               </div>
             </div>
           </div>

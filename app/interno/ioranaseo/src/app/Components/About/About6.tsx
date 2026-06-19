@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -170,7 +171,7 @@ const About6: FC<About6Props> = ({
                               </svg>
                             </div>
                             <div className="image2">
-                              <Image
+                              <OptimizedImage
                                 src={img1}
                                 alt="img"
                                 width={329}
@@ -178,7 +179,7 @@ const About6: FC<About6Props> = ({
                               />
                             </div>
                             <div className="image3 animate2">
-                              <Image
+                              <OptimizedImage
                                 src={img2}
                                 alt="img"
                                 width={200}
@@ -186,7 +187,7 @@ const About6: FC<About6Props> = ({
                               />
                             </div>
                             <div className="image4 animate1">
-                              <Image
+                              <OptimizedImage
                                 src={img3}
                                 alt="img"
                                 width={306}
@@ -194,7 +195,7 @@ const About6: FC<About6Props> = ({
                               />
                             </div>
                             <div className="image5">
-                              <Image
+                              <OptimizedImage
                                 src={img4}
                                 alt="img"
                                 width={213}

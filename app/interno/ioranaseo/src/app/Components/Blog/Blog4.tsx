@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -12,7 +13,7 @@ const Blog4: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={20}
@@ -36,7 +37,7 @@ const Blog4: FC = () => {
                 data-aos-duration="800"
               >
                 <div className="image image-anime">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/blog/blog3-img.png"
                     alt="img"
                     width={620}
@@ -46,7 +47,7 @@ const Blog4: FC = () => {
                 <div className="heading3">
                   <div className="author-area">
                     <a href="#" className="date">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/author.svg"
                         alt="img"
                         width={20}
@@ -55,7 +56,7 @@ const Blog4: FC = () => {
                       Alex Carey
                     </a>
                     <a href="#" className="date">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/date.svg"
                         alt="img"
                         width={20}
@@ -91,7 +92,7 @@ const Blog4: FC = () => {
                   <div className="heading3">
                     <div className="author-area">
                       <a href="#" className="date">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/author.svg"
                           alt="img"
                           width={20}
@@ -100,7 +101,7 @@ const Blog4: FC = () => {
                         Alex Roy
                       </a>
                       <a href="#" className="date">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/date.svg"
                           alt="img"
                           width={20}
@@ -130,7 +131,7 @@ const Blog4: FC = () => {
                   <div className="heading3">
                     <div className="author-area">
                       <a href="#" className="date">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/author.svg"
                           alt="img"
                           width={20}
@@ -139,7 +140,7 @@ const Blog4: FC = () => {
                         Alex Hales
                       </a>
                       <a href="#" className="date">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/date.svg"
                           alt="img"
                           width={20}
@@ -169,7 +170,7 @@ const Blog4: FC = () => {
                   <div className="heading3">
                     <div className="author-area">
                       <a href="#" className="date">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/author.svg"
                           alt="img"
                           width={20}
@@ -178,7 +179,7 @@ const Blog4: FC = () => {
                         Alex Carey
                       </a>
                       <a href="#" className="date">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/icons/date.svg"
                           alt="img"
                           width={20}

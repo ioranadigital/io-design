@@ -1,3 +1,5 @@
+"use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
 import React from "react";
 import BreadCumb from "@/app/Components/Common/BreadCumb";
 import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
@@ -41,6 +43,7 @@ const posicionamientoGoogleFaq = [
 ];
 
 const PosicionamientoGooglePage = () => {
+  useWebVitalsTracker();
   return (
     <div>
       <BreadCumb

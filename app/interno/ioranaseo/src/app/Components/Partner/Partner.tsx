@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import Slider from "react-slick";
 import { FC } from "react";
 
@@ -45,7 +45,7 @@ const Partner: FC = () => {
             <div className="team-logo-slider owl-carousel">
               <Slider {...settings}>
                 <div className="single-logo">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/about-team-logo1.png"
                     alt="img"
                     width={120}
@@ -53,7 +53,7 @@ const Partner: FC = () => {
                   />
                 </div>
                 <div className="single-logo">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/about-team-logo2.png"
                     alt="img"
                     width={120}
@@ -61,7 +61,7 @@ const Partner: FC = () => {
                   />
                 </div>
                 <div className="single-logo">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/about-team-logo3.png"
                     alt="img"
                     width={120}
@@ -69,7 +69,7 @@ const Partner: FC = () => {
                   />
                 </div>
                 <div className="single-logo">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/about-team-logo4.png"
                     alt="img"
                     width={120}
@@ -77,7 +77,7 @@ const Partner: FC = () => {
                   />
                 </div>
                 <div className="single-logo">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/about-team-logo5.png"
                     alt="img"
                     width={120}
@@ -85,7 +85,7 @@ const Partner: FC = () => {
                   />
                 </div>
                 <div className="single-logo">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/about-team-logo1.png"
                     alt="img"
                     width={120}

@@ -1,7 +1,8 @@
+"use client";
 import SectionTitle2 from "../Common/SectionTitle2";
 import data from "../../Data/casestudy2.json";
 import Link from "next/link";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const CaseStudy2: FC = () => {
@@ -29,7 +30,12 @@ const CaseStudy2: FC = () => {
             >
               <div className="blog-box">
                 <div className="image image-anime">
-                  <Image src={item.img} alt="img" width={416} height={337} />
+                  <OptimizedImage
+                    src={item.img}
+                    alt="img"
+                    width={416}
+                    height={337}
+                  />
                 </div>
                 <div className="heading1">
                   <a href="#" className="date">
@@ -51,7 +57,7 @@ const CaseStudy2: FC = () => {
           ))}
         </div>
       </div>
-      <Image
+      <OptimizedImage
         src="/assets/img/shapes/blog1-shape.png"
         alt="img"
         width={198}

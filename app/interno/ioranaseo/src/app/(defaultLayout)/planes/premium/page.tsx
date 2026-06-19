@@ -1,3 +1,5 @@
+"use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
 import React from "react";
 import BreadCumb from "../../../Components/Common/BreadCumb";
 import HeroBannerPlanes from "../../../Components/HeroBanner/HeroBannerPlanes";
@@ -6,6 +8,7 @@ import Work3 from "../../../Components/Work/Work3";
 import Service3 from "../../../Components/Services/Service3";
 
 const PremiumPage = () => {
+  useWebVitalsTracker();
   return (
     <div style={{ backgroundColor: "#ffffff" }}>
       <BreadCumb

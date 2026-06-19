@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface Work1Props {
@@ -19,7 +20,7 @@ const Work1: FC<Work1Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={21}
@@ -40,7 +41,7 @@ const Work1: FC<Work1Props> = ({
               <div className="work-box">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon1.svg"
                       alt="img"
                       width={60}
@@ -71,7 +72,7 @@ const Work1: FC<Work1Props> = ({
               <div className="work-box active">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon2.svg"
                       alt="img"
                       width={60}
@@ -99,7 +100,7 @@ const Work1: FC<Work1Props> = ({
               <div className="work-box">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon3.svg"
                       alt="img"
                       width={60}
@@ -173,7 +174,7 @@ const Work1: FC<Work1Props> = ({
                 </svg>
               </div>
               <div className="image2">
-                <Image
+                <OptimizedImage
                   src="/assets/img/work/hombre-mujer-empreendedores-online.jpg"
                   alt="Por qué elegir este plan"
                   width={505}
@@ -181,7 +182,7 @@ const Work1: FC<Work1Props> = ({
                 />
               </div>
               <div className="image3 animate1">
-                <Image
+                <OptimizedImage
                   src="/assets/img/work/work-img2.png"
                   alt="img"
                   width={300}

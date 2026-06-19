@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -21,7 +22,12 @@ const Footer1: FC<Footer1Props> = ({ addclass, footerlogo }) => {
           <div className="col-lg-3 col-md-6">
             <div className="heading1">
               <a href="index.html" className="logo">
-                <Image src={footerlogo} alt="img" width={160} height={56} />
+                <OptimizedImage
+                  src={footerlogo}
+                  alt="img"
+                  width={160}
+                  height={56}
+                />
               </a>
               <p>
                 En Iorana SEO, estamos comprometidos a ayudar a tu negocio a

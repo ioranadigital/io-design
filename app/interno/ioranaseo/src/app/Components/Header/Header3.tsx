@@ -2,7 +2,7 @@
 import { useEffect, useState, FC } from "react";
 import Nav from "./Nav";
 import Link from "next/link";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 interface Header3Props {
   variant?: string;
@@ -46,7 +46,7 @@ const Header3: FC<Header3Props> = ({ variant }) => {
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
               <Link href="/" className="cs_site_branding">
-                <Image
+                <OptimizedImage
                   src="/assets/img/logo/header-logo5.png"
                   alt="img"
                   width={130}

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const ContactInfo5: FC = () => {
   useEffect(() => {
@@ -31,7 +31,7 @@ const ContactInfo5: FC = () => {
                   <div className="col-md-6">
                     <div className="single-input">
                       <input type="text" placeholder="https:// tusitio.com" />
-                      <Image
+                      <OptimizedImage
                         className="icon"
                         src="/assets/img/icons/service-details-form-icon1.svg"
                         alt="img"
@@ -44,7 +44,7 @@ const ContactInfo5: FC = () => {
                   <div className="col-md-6">
                     <div className="single-input">
                       <input type="text" placeholder="tucorreo@dominio.com" />
-                      <Image
+                      <OptimizedImage
                         className="icon"
                         src="/assets/img/icons/service-details-form-icon2.svg"
                         alt="img"

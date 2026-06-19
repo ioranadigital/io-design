@@ -1,3 +1,5 @@
+"use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
 import React from "react";
 import BreadCumb from "../../../Components/Common/BreadCumb";
 import HeroBannerPlanes from "../../../Components/HeroBanner/HeroBannerPlanes";
@@ -6,6 +8,7 @@ import AuditoriaGratis from "../../../Components/AuditoriaGratis/AuditoriaGratis
 import ContactIno3 from "../../../Components/ContactInfo/ContactIno3";
 
 const ComparaPlanesPage = () => {
+  useWebVitalsTracker();
   return (
     <div style={{ backgroundColor: "#ffffff" }}>
       <BreadCumb

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import SectionTitle2 from "../Common/SectionTitle2";
 import data from "../../Data/testimonial2.json";
 import { useRef, FC } from "react";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const Testimonial3: FC = () => {
   const sliderRef = useRef<any>(null);
@@ -67,7 +67,7 @@ const Testimonial3: FC = () => {
               data-aos="fade-up"
               data-aos-duration="700"
             >
-              <Image
+              <OptimizedImage
                 src="/assets/img/testimonial/tes3-image.png"
                 alt="img"
                 width={365}
@@ -110,7 +110,7 @@ const Testimonial3: FC = () => {
                         <div className="bottom">
                           <div className="info">
                             <div className="image">
-                              <Image
+                              <OptimizedImage
                                 src={item.img}
                                 alt="img"
                                 width={61}

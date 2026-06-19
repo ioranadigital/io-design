@@ -2,7 +2,7 @@
 import Slider from "react-slick";
 import data from "../../Data/testimonial1.json";
 import SectionTitle from "../Common/SectionTitle";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const Testimonial2: FC = () => {
@@ -67,7 +67,7 @@ const Testimonial2: FC = () => {
                       <div key={i} className="carousel-item active">
                         <div className="tes1-box-all">
                           <div className="main-img">
-                            <Image
+                            <OptimizedImage
                               src={item.img}
                               alt="img"
                               width={290}
@@ -95,7 +95,7 @@ const Testimonial2: FC = () => {
                             <p>“{item.desc}”</p>
                             <div className="bottom-heading">
                               <div className="image">
-                                <Image
+                                <OptimizedImage
                                   src={item.img}
                                   alt="img"
                                   width={70}

@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 interface Work3Props {
@@ -23,7 +24,7 @@ const Work3: FC<Work3Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/main-span3.svg"
                     alt="img"
                     width={20}
@@ -44,7 +45,7 @@ const Work3: FC<Work3Props> = ({
               <div className="work-box">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon1.svg"
                       alt="img"
                       width={60}
@@ -74,7 +75,7 @@ const Work3: FC<Work3Props> = ({
               <div className="work-box active">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon2.svg"
                       alt="img"
                       width={60}
@@ -102,7 +103,7 @@ const Work3: FC<Work3Props> = ({
               <div className="work-box">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon3.svg"
                       alt="img"
                       width={60}

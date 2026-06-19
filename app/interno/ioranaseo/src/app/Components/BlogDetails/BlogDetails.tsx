@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -115,7 +116,7 @@ const BlogDetails: FC = () => {
                 <h3>If You Need Any SEO And Digital Marketing Help ?</h3>
                 <div className="phone-btn">
                   <a href="tel:(123)3344567890">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/details-call-icon.svg"
                       alt="img"
                       width={24}
@@ -133,7 +134,7 @@ const BlogDetails: FC = () => {
               <article>
                 <div className="details-post-single">
                   <div className="image image-anime">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/case/case-details-img1.png"
                       alt="img"
                       width={826}
@@ -147,7 +148,7 @@ const BlogDetails: FC = () => {
                       </li>
                       <li className="date">
                         <a href="#">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/details-date.svg"
                             alt="img"
                             width={20}
@@ -158,7 +159,7 @@ const BlogDetails: FC = () => {
                       </li>
                       <li className="date">
                         <a href="#">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/details-comment.svg"
                             alt="img"
                             width={20}
@@ -242,7 +243,7 @@ const BlogDetails: FC = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="image image-anime">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/case/case-details-img2.png"
                           alt="img"
                           width={401}
@@ -253,7 +254,7 @@ const BlogDetails: FC = () => {
 
                     <div className="col-md-6">
                       <div className="image image-anime">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/case/case-details-img3.png"
                           alt="img"
                           width={401}
@@ -330,7 +331,7 @@ const BlogDetails: FC = () => {
                   <div className="outhor-area-all">
                     <div className="author-area">
                       <div className="image">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/blog/comment-img1.png"
                           alt="img"
                           width={80}
@@ -339,7 +340,7 @@ const BlogDetails: FC = () => {
                       </div>
                       <div className="heading">
                         <a href="#" className="date">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/date.svg"
                             alt="img"
                             width={20}
@@ -370,7 +371,7 @@ const BlogDetails: FC = () => {
                   <div className="outhor-area-all">
                     <div className="author-area">
                       <div className="image">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/blog/comment-img1.png"
                           alt="img"
                           width={80}
@@ -379,7 +380,7 @@ const BlogDetails: FC = () => {
                       </div>
                       <div className="heading">
                         <a href="#" className="date">
-                          <Image
+                          <OptimizedImage
                             src="/assets/img/icons/date.svg"
                             alt="img"
                             width={20}

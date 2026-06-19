@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -32,17 +33,22 @@ const About5: FC<About5Props> = ({
           <div className="col-lg-6">
             <div className="images-all">
               <div className="shape-bg1">
-                <Image src={shape} alt="img" width={782} height={743} />
+                <OptimizedImage
+                  src={shape}
+                  alt="img"
+                  width={782}
+                  height={743}
+                />
               </div>
               <div
                 className="image1"
                 data-aos="zoom-out"
                 data-aos-duration="700"
               >
-                <Image src={img1} alt="img" width={470} height={530} />
+                <OptimizedImage src={img1} alt="img" width={470} height={530} />
               </div>
               <div className="image2 animate2">
-                <Image src={img2} alt="img" width={477} height={375} />
+                <OptimizedImage src={img2} alt="img" width={477} height={375} />
               </div>
             </div>
           </div>
@@ -51,7 +57,7 @@ const About5: FC<About5Props> = ({
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/span5.svg"
                     alt="img"
                     width={20}

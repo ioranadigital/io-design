@@ -1,10 +1,13 @@
 "use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
+("use client");
 
 import React from "react";
 import BreadcrumbInline from "../../Components/HeroBanner/BreadcrumbInline";
 import AuditoriaGratis from "../../Components/AuditoriaGratis/AuditoriaGratis";
 
 const InformeGratuito = () => {
+  useWebVitalsTracker();
   return (
     <div>
       <div

@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import data from "../../Data/services2.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const Services6: FC = () => {
@@ -12,7 +13,12 @@ const Services6: FC = () => {
             <div key={i} className="col-lg-4 col-md-6">
               <div className="service3-box">
                 <div className="image">
-                  <Image src={item.icon} alt="img" width={250} height={250} />
+                  <OptimizedImage
+                    src={item.icon}
+                    alt="img"
+                    width={250}
+                    height={250}
+                  />
                 </div>
                 <div className="heading3">
                   <h4>

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const ContactInfo2: FC = () => {
   useEffect(() => {
@@ -31,14 +31,14 @@ const ContactInfo2: FC = () => {
             </div>
           </div>
         </div>
-        <Image
+        <OptimizedImage
           src="/assets/img/others/cta2-img1.png"
           alt="img"
           width={238}
           height={226}
           className="image1"
         />
-        <Image
+        <OptimizedImage
           src="/assets/img/others/cta2-img2.png"
           alt="img"
           width={238}

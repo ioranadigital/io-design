@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import data from "../../Data/testimonial3.json";
 import SectionTitle2 from "../Common/SectionTitle2";
 import { FC } from "react";
@@ -44,7 +45,7 @@ const Testimonial6: FC = () => {
                 <p> {item.desc}</p>
                 <div className="bottom">
                   <div className="image">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/testimonial/tes-img1.png"
                       alt="img"
                       width={60}

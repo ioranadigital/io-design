@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const Work4: FC = () => {
@@ -11,7 +12,7 @@ const Work4: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/span5.svg"
                     alt="img"
                     width={20}
@@ -89,7 +90,7 @@ const Work4: FC = () => {
           <div className="row align-items-center">
             <div className="col-lg-3 col-md-4">
               <div className="image image-anime reveal">
-                <Image
+                <OptimizedImage
                   src="/assets/img/service/what-we-do5-img1.png"
                   alt="img"
                   width={306}
@@ -99,7 +100,7 @@ const Work4: FC = () => {
             </div>
             <div className="col-lg-6 col-md-4">
               <div className="image image-anime reveal">
-                <Image
+                <OptimizedImage
                   src="/assets/img/service/what-we-do5-img2.png"
                   alt="img"
                   width={636}
@@ -109,7 +110,7 @@ const Work4: FC = () => {
             </div>
             <div className="col-lg-3 col-md-4">
               <div className="image image-anime reveal">
-                <Image
+                <OptimizedImage
                   src="/assets/img/service/what-we-do5-img3.png"
                   alt="img"
                   width={306}

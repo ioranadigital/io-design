@@ -1,9 +1,12 @@
 "use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
+("use client");
 
 import { useState } from "react";
 import Link from "next/link";
 
 export default function InformeGratisPage() {
+  useWebVitalsTracker();
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);

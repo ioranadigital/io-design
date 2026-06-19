@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import data from "../../Data/services3.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const Services4: FC = () => {
@@ -13,7 +14,7 @@ const Services4: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/span5.svg"
                     alt="img"
                     width={20}
@@ -86,7 +87,7 @@ const Services4: FC = () => {
                         </svg>
                       </div>
                       <div className="image2 reveal">
-                        <Image
+                        <OptimizedImage
                           src={item.img2}
                           alt="img"
                           width={280}

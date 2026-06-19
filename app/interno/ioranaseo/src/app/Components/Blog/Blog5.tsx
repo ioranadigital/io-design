@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import data from "../../Data/blog1.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const Blog5: FC = () => {
@@ -13,7 +14,7 @@ const Blog5: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/logo/span5.svg"
                     alt="img"
                     width={20}
@@ -37,12 +38,17 @@ const Blog5: FC = () => {
             >
               <div className="blog-box">
                 <div className="image">
-                  <Image src={item.img} alt="img" width={416} height={315} />
+                  <OptimizedImage
+                    src={item.img}
+                    alt="img"
+                    width={416}
+                    height={315}
+                  />
                 </div>
                 <div className="heading1">
                   <div className="author-area">
                     <a href="#" className="date">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/author.svg"
                         alt="img"
                         width={20}
@@ -51,7 +57,7 @@ const Blog5: FC = () => {
                       Alex Roy
                     </a>
                     <a href="#" className="date">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/date.svg"
                         alt="img"
                         width={20}
@@ -76,7 +82,7 @@ const Blog5: FC = () => {
           ))}
         </div>
       </div>
-      <Image
+      <OptimizedImage
         src="/assets/img/shapes/blog1-shape.png"
         alt="img"
         width={198}

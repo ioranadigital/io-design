@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import { FC } from "react";
+import { OptimizedImage } from "@/components";
 
 interface ServiceCardProps {
   subtitle: string;
@@ -104,16 +106,36 @@ const ServiceCard: FC<ServiceCardProps> = ({
               </svg>
             </div>
             <div className="image2">
-              <img src={img1} alt="" />
+              <OptimizedImage
+                src={img1}
+                alt="Service image 1"
+                width={300}
+                height={300}
+              />
             </div>
             <div className="image3 animate2">
-              <img src={img2} alt="" />
+              <OptimizedImage
+                src={img2}
+                alt="Service image 2"
+                width={300}
+                height={300}
+              />
             </div>
             <div className="image4 animate1">
-              <img src={img3} alt="" />
+              <OptimizedImage
+                src={img3}
+                alt="Service image 3"
+                width={300}
+                height={300}
+              />
             </div>
             <div className="image5">
-              <img src={img4} alt="" />
+              <OptimizedImage
+                src={img4}
+                alt="Service image 4"
+                width={300}
+                height={300}
+              />
             </div>
           </div>
         </div>

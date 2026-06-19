@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 interface HeroBanner4Props {
   bgimg: string;
@@ -38,7 +38,7 @@ const HeroBanner4: FC<HeroBanner4Props> = ({
             <div className="col-lg-6 m-auto text-center">
               <div className="main-heading-area">
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span4.svg"
                     alt="img"
                     width={20}
@@ -63,35 +63,35 @@ const HeroBanner4: FC<HeroBanner4Props> = ({
               </div>
             </div>
           </div>
-          <Image
+          <OptimizedImage
             src={shape1}
             alt="img"
             width={335}
             height={308}
             className="shape1"
           />
-          <Image
+          <OptimizedImage
             src={shape2}
             alt="img"
             width={335}
             height={308}
             className="shape2"
           />
-          <Image
+          <OptimizedImage
             src={shape3}
             alt="img"
             width={496}
             height={375}
             className="shape3"
           />
-          <Image
+          <OptimizedImage
             src={shape4}
             alt="img"
             width={358}
             height={254}
             className="shape4"
           />
-          <Image
+          <OptimizedImage
             src={shape5}
             alt="img"
             width={179}
@@ -99,7 +99,7 @@ const HeroBanner4: FC<HeroBanner4Props> = ({
             className="shape5"
           />
         </div>
-        <Image
+        <OptimizedImage
           src={img}
           alt="img"
           width={539}

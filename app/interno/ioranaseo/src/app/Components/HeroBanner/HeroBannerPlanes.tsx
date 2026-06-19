@@ -1,6 +1,6 @@
 "use client";
 import parse from "html-react-parser";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC, useRef } from "react";
 
@@ -261,7 +261,7 @@ const HeroBannerPlanes: FC<HeroBannerPlanesProps> = ({
                       zIndex: 1,
                     }}
                   >
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/work/hombre-mujer-empreendedores-online.jpg"
                       alt="Plan Inicial"
                       width={400}

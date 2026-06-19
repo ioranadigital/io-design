@@ -1,7 +1,10 @@
+"use client";
+import { useWebVitalsTracker } from "@/lib/technical-seo";
 import React from "react";
 import BreadCumb from "../../Components/Common/BreadCumb";
 
 const LegalPage = () => {
+  useWebVitalsTracker();
   return (
     <div>
       <BreadCumb

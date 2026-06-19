@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import data from "../../Data/casestudy1.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const CaseStudy3: FC = () => {
@@ -12,7 +13,12 @@ const CaseStudy3: FC = () => {
             <div key={i} className="col-lg-4 col-md-6">
               <div className="single-slider">
                 <div className="image">
-                  <Image src={item.img} alt="img" width={396} height={428} />
+                  <OptimizedImage
+                    src={item.img}
+                    alt="img"
+                    width={396}
+                    height={428}
+                  />
                 </div>
                 <div className="heading-area">
                   <p>{item.title}</p>

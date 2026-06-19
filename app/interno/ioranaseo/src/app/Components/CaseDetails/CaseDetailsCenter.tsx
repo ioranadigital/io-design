@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState, FC } from "react";
 import data from "../../Data/faq.json";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 
 const CaseDetailsCenter: FC = () => {
   const accordionContentRef = useRef(null);
@@ -31,7 +31,7 @@ const CaseDetailsCenter: FC = () => {
               <article>
                 <div className="details-post-single">
                   <div className="image image-anime">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/case/case-details-img1.png"
                       alt="img"
                       width={826}
@@ -111,7 +111,7 @@ const CaseDetailsCenter: FC = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="image image-anime">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/case/case-details-img2.png"
                           alt="img"
                           width={401}
@@ -122,7 +122,7 @@ const CaseDetailsCenter: FC = () => {
 
                     <div className="col-md-6">
                       <div className="image image-anime">
-                        <Image
+                        <OptimizedImage
                           src="/assets/img/case/case-details-img3.png"
                           alt="img"
                           width={401}

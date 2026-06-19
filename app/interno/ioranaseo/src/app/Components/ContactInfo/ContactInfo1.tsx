@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import { FC } from "react";
 
 const ContactInfo1: FC = () => {
@@ -11,7 +12,7 @@ const ContactInfo1: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={21}
@@ -37,7 +38,7 @@ const ContactInfo1: FC = () => {
                     <label>Nombre*</label>
                     <input type="text" placeholder="Tu Nombre" />
                     <span className="icon">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/contact1-input1.svg"
                         alt="img"
                         width={20}
@@ -49,7 +50,7 @@ const ContactInfo1: FC = () => {
                     <label>Correo Electrónico*</label>
                     <input type="text" placeholder="Tu Correo" />
                     <span className="icon">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/contact1-input2.svg"
                         alt="img"
                         width={20}
@@ -61,7 +62,7 @@ const ContactInfo1: FC = () => {
                     <label>URL del Sitio Web*</label>
                     <input type="text" placeholder="Tusitio.com" />
                     <span className="icon">
-                      <Image
+                      <OptimizedImage
                         src="/assets/img/icons/contact1-input3.svg"
                         alt="img"
                         width={18}
@@ -82,7 +83,7 @@ const ContactInfo1: FC = () => {
               </div>
 
               <div className="shape1">
-                <Image
+                <OptimizedImage
                   src="/assets/img/shapes/contact1-shape1.png"
                   alt="img"
                   width={204}
@@ -90,7 +91,7 @@ const ContactInfo1: FC = () => {
                 />
               </div>
               <div className="shape2">
-                <Image
+                <OptimizedImage
                   src="/assets/img/shapes/contact1-shape2.png"
                   alt="img"
                   width={190}
@@ -105,7 +106,7 @@ const ContactInfo1: FC = () => {
           <div className="col-lg-4 col-md-6">
             <div className="contact1-box">
               <div className="icon">
-                <Image
+                <OptimizedImage
                   src="/assets/img/icons/contact1-icon1.svg"
                   alt="img"
                   width={25}
@@ -122,7 +123,7 @@ const ContactInfo1: FC = () => {
           <div className="col-lg-4 col-md-6">
             <div className="contact1-box">
               <div className="icon">
-                <Image
+                <OptimizedImage
                   src="/assets/img/icons/contact1-icon2.svg"
                   alt="img"
                   width={32}
@@ -139,7 +140,7 @@ const ContactInfo1: FC = () => {
           <div className="col-lg-4 col-md-6">
             <div className="contact1-box">
               <div className="icon">
-                <Image
+                <OptimizedImage
                   src="/assets/img/icons/contact1-icon3.svg"
                   alt="img"
                   width={32}

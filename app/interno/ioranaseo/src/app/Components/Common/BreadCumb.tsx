@@ -2,7 +2,7 @@
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "./loadBackgroudImages";
 import Link from "next/link";
-import Image from "next/image";
+import { OptimizedImage } from "@/components";
 import BreadcrumbInline from "../HeroBanner/BreadcrumbInline";
 
 interface BreadcrumbItem {

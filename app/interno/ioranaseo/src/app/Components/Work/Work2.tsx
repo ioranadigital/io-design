@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+import { OptimizedImage } from "@/components";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -12,7 +13,7 @@ const Work2: FC = () => {
               <p className="title" data-aos="fade-left" data-aos-duration="800">
                 {" "}
                 <span className="span">
-                  <Image
+                  <OptimizedImage
                     src="/assets/img/icons/span1.svg"
                     alt="img"
                     width={21}
@@ -33,7 +34,7 @@ const Work2: FC = () => {
               <div className="work-box">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon1.svg"
                       alt="img"
                       width={60}
@@ -61,7 +62,7 @@ const Work2: FC = () => {
               <div className="work-box active">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon2.svg"
                       alt="img"
                       width={60}
@@ -91,7 +92,7 @@ const Work2: FC = () => {
               <div className="work-box">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon3.svg"
                       alt="img"
                       width={60}
@@ -119,7 +120,7 @@ const Work2: FC = () => {
               <div className="work-box">
                 <div className="icon-area">
                   <div className="icon">
-                    <Image
+                    <OptimizedImage
                       src="/assets/img/icons/work1-icon4.svg"
                       alt="img"
                       width={60}
