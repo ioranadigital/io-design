@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-interface CacheConfig {
+export interface CacheConfig {
   maxAge: number;
   staleWhileRevalidate?: number;
   staleIfError?: number;
