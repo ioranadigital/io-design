@@ -15,9 +15,13 @@ export default function InformeGratisPage() {
     setError(null);
 
     const formData = new FormData(e.currentTarget);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const website = formData.get("website") as string;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const email = formData.get("email") as string;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const nombre = formData.get("nombre") as string;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const telefono = formData.get("telefono") as string;
 
     try {
