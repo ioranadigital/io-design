@@ -6,7 +6,7 @@ services:
     image: ${DOCKER_REGISTRY:-registry.example.com}/ioranaseo:latest
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.coolify
     ports:
       - "3005:3005"
     environment:
