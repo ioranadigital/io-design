@@ -4,7 +4,6 @@ import BreadCumb from "../../Components/Common/BreadCumb";
 import HeroBannerPlanes from "../../Components/HeroBanner/HeroBannerPlanes";
 import Pricing3 from "../../Components/Pricing/Pricing3";
 import WebGratisSection from "../../Components/WebGratis/WebGratisSection";
-import WhatsappCTA from "../../Components/WhatsappCTA/WhatsappCTA";
 import ContactIno3 from "../../Components/ContactInfo/ContactIno3";
 
 const PlanesPage = () => {
@@ -31,8 +30,6 @@ const PlanesPage = () => {
       <WebGratisSection></WebGratisSection>
 
       <ContactIno3></ContactIno3>
-
-      <WhatsappCTA></WhatsappCTA>
     </div>
   );
 };
