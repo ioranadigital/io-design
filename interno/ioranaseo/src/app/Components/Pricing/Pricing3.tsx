@@ -84,10 +84,7 @@ const Pricing3: FC<Pricing3Props> = ({ highlightedPlan }) => {
         <div className="row">
           <div className="col-lg-6 m-auto text-center">
             <div className="heading3">
-              <SectionTitle2
-                SubTitle="plan de precios"
-                Title="Elige tu Plan Inicial"
-              ></SectionTitle2>
+              <SectionTitle2 Title="Elige tu Plan Inicial"></SectionTitle2>
             </div>
           </div>
         </div>
