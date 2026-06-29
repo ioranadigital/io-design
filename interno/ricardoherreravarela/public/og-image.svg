@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f7ff"/>
+      <stop offset="100%" stop-color="#e8f0fe"/>
+    </linearGradient>
+    <!-- Blue accent blob -->
+    <radialGradient id="blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Glass card filter -->
+    <filter id="glass-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="24" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative blobs -->
+  <ellipse cx="100" cy="120" rx="320" ry="280" fill="url(#blob1)"/>
+  <ellipse cx="1100" cy="500" rx="280" ry="240" fill="url(#blob2)"/>
+  <ellipse cx="700" cy="60" rx="200" ry="160" fill="url(#blob1)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#3b82f6" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+  </g>
+
+  <!-- Glass card background -->
+  <rect x="60" y="60" width="1080" height="510" rx="32" fill="white" fill-opacity="0.65" filter="url(#glass-shadow)" stroke="white" stroke-opacity="0.8" stroke-width="1.5"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="8" height="510" rx="4" fill="#3b82f6"/>
+
+  <!-- Top label -->
+  <rect x="100" y="104" width="240" height="30" rx="15" fill="#eff6ff"/>
+  <text x="220" y="124" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="middle" letter-spacing="2">DISPONIBLE PARA PROYECTOS</text>
+
+  <!-- Main name -->
+  <text x="100" y="210" font-family="'Inter', system-ui, sans-serif" font-size="64" font-weight="700" fill="#0f172a" letter-spacing="-2">Ricardo Herrera</text>
+  <text x="100" y="282" font-family="'Inter', system-ui, sans-serif" font-size="64" font-weight="700" fill="#0f172a" letter-spacing="-2">Varela</text>
+
+  <!-- Role / subtitle with gradient simulation -->
+  <text x="100" y="340" font-family="'Inter', system-ui, sans-serif" font-size="26" font-weight="600" fill="#1e40af">Digital Project Manager · Consultor SEO · Operaciones</text>
+
+  <!-- Divider line -->
+  <line x1="100" y1="368" x2="1000" y2="368" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Skills pills -->
+  <!-- SEO -->
+  <rect x="100" y="390" width="80" height="32" rx="16" fill="#dbeafe"/>
+  <text x="140" y="411" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8" text-anchor="middle">SEO</text>
+
+  <!-- Jira -->
+  <rect x="194" y="390" width="140" height="32" rx="16" fill="#dbeafe"/>
+  <text x="264" y="411" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8" text-anchor="middle">Jira / JSM</text>
+
+  <!-- GWorkspace -->
+  <rect x="348" y="390" width="200" height="32" rx="16" fill="#dbeafe"/>
+  <text x="448" y="411" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8" text-anchor="middle">Google Workspace</text>
+
+  <!-- N8N / Make -->
+  <rect x="562" y="390" width="130" height="32" rx="16" fill="#dbeafe"/>
+  <text x="627" y="411" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8" text-anchor="middle">N8N / Make</text>
+
+  <!-- CRM -->
+  <rect x="706" y="390" width="90" height="32" rx="16" fill="#dbeafe"/>
+  <text x="751" y="411" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8" text-anchor="middle">CRM</text>
+
+  <!-- Stats row -->
+  <!-- +8 años SEO -->
+  <text x="100" y="480" font-family="'Inter', system-ui, sans-serif" font-size="40" font-weight="700" fill="#2563eb">+8</text>
+  <text x="100" y="510" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#64748b">años SEO</text>
+
+  <!-- divider dot -->
+  <circle cx="216" cy="490" r="3" fill="#cbd5e1"/>
+
+  <!-- +4 años PM -->
+  <text x="236" y="480" font-family="'Inter', system-ui, sans-serif" font-size="40" font-weight="700" fill="#2563eb">+4</text>
+  <text x="236" y="510" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#64748b">años PM</text>
+
+  <!-- divider dot -->
+  <circle cx="352" cy="490" r="3" fill="#cbd5e1"/>
+
+  <!-- +6 años Ops -->
+  <text x="372" y="480" font-family="'Inter', system-ui, sans-serif" font-size="40" font-weight="700" fill="#2563eb">+6</text>
+  <text x="372" y="510" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#64748b">años Operaciones</text>
+
+  <!-- Right side — URL / website -->
+  <text x="1100" y="510" font-family="'Inter', system-ui, sans-serif" font-size="14" fill="#94a3b8" text-anchor="end" letter-spacing="0.5">ricardoherreravarela.com</text>
+
+  <!-- LinkedIn icon simplified -->
+  <rect x="1060" y="388" width="76" height="36" rx="18" fill="#0a66c2"/>
+  <text x="1098" y="411" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle">LinkedIn</text>
+
+  <!-- Bottom left dot decoration -->
+  <circle cx="80" cy="548" r="4" fill="#3b82f6" fill-opacity="0.4"/>
+  <circle cx="96" cy="548" r="4" fill="#3b82f6" fill-opacity="0.25"/>
+  <circle cx="112" cy="548" r="4" fill="#3b82f6" fill-opacity="0.15"/>
+</svg>

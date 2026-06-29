@@ -1,0 +1,57 @@
+🚀 io-prospector LISTO PARA HETZNER
+====================================
+
+STATUS: ✅ 100% AUTOMATIZADO
+
+EJECUTA ESTE COMANDO AHORA:
+
+Windows (PowerShell):
+    .\deploy-to-hetzner.ps1
+
+Linux/Mac (Bash):
+    chmod +x deploy-to-hetzner.sh
+    ./deploy-to-hetzner.sh
+
+QUÉ SUCEDE:
+  ✅ Verifica SSH, .env y archivos (1 min)
+  ✅ Instala Docker, nginx, certbot en Hetzner (10 min)
+  ✅ Clona repositorio (1 min)
+  ✅ Copia .env (1 min)
+  ✅ Build Docker images (5-10 min)
+  ✅ Deploy servicios (redis, backend, frontend) (5 min)
+  ✅ Configura SSL Let's Encrypt (5 min)
+  ✅ Verifica health checks (3 min)
+
+TOTAL: ~30 minutos (incluye build Docker)
+
+DESPUÉS DEL DEPLOYMENT:
+  1. Configura DNS records en Hetzner Cloud:
+     - pros.iorana.dev → A → 89.167.103.147
+     - api.pros.iorana.dev → A → 89.167.103.147
+     - www.pros.iorana.dev → CNAME → pros.iorana.dev
+
+  2. Espera DNS propagation (5-30 min)
+
+  3. Test:
+     https://pros.iorana.dev
+     https://api.pros.iorana.dev/health
+
+ARCHIVOS IMPORTANTES:
+  • deploy-to-hetzner.ps1 ← EJECUTA ESTO (PowerShell)
+  • deploy-to-hetzner.sh ← O ESTO (Bash)
+  • DEPLOY-QUICK-START.md ← Guía rápida
+  • .env ← Credenciales (creado con valores reales)
+  • docker-compose.yml ← Actualizado
+
+REQUISITOS:
+  ✅ .env creado (ya está)
+  ✅ SSH key configurada
+  ✅ Git remoto configurado
+  ✅ PowerShell 7+ (Windows) o Bash (Linux)
+
+¿PREGUNTAS?
+  Ver: DEPLOY-QUICK-START.md
+  Logs: deployment_2026-XX-XX_HH-MM-SS.log
+  Docs: DEPLOYMENT-HETZNER-FINAL-PLAN.md
+
+STATUS: 🟢 READY - EJECUTA AHORA

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximo Lanzamiento | IORANA Surf</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ebf2f7; /* Tu azul claro corporativo */
+            overflow: hidden;
+        }
+
+        /* Contenedor del fondo */
+        .bg-image {
+            /* Sustituye esta URL por tu imagen de construcción */
+            background-image: linear-gradient(rgba(10, 43, 73, 0.7), rgba(10, 43, 73, 0.7)), 
+                              url('/index-surf-inicial.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Contenido central */
+        .content {
+            padding: 20px;
+            max-width: 700px;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .logo span {
+            color: #ff8c00; /* Tu naranja de acento */
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(235, 242, 247, 0.8);
+        }
+
+        /* Barra de progreso decorativa */
+        .progress-container {
+            width: 100%;
+            background-color: rgba(235, 242, 247, 0.1);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(235, 242, 247, 0.1);
+        }
+
+        .progress-bar {
+            width: 75%; /* Nivel de carga */
+            height: 10px;
+            background-color: #ff8c00;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ebf2f7;
+            color: #0a2b49;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff8c00;
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image">
+        <div class="content">
+            <div class="logo">IORANA <span>Surf</span></div>
+            <h1>Estamos trabajando en algo grande</h1>
+            <p>Nuestra nueva plataforma está casi lista. Estamos afinando los últimos detalles para ofrecerte la mejor experiencia en marketing digital.</p>
+          
+           <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+          
+        </div>
+    </div>
+
+</body>
+</html>

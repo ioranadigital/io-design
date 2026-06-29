@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /temp/
+Disallow: /kit-Digital/
+Disallow: /login/
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: AnthropicAI
+Disallow: /
+
+User-agent: Googlebot
+Allow: /
+Disallow: /*?q=
+Disallow: /*?tag=
+Disallow: /tag/
+
+
+Sitemap: https://iorana.digital/sitemap.xml

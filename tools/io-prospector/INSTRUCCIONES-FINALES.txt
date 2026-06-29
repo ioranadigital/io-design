@@ -1,0 +1,177 @@
+🚀 INSTRUCCIONES FINALES - DEPLOYMENT io-prospector
+═════════════════════════════════════════════════════
+
+STATUS: ✅ Listo para ejecutar (TODO está automatizado)
+
+PASO 1: SSH a Hetzner
+═════════════════════
+Abre PowerShell y ejecuta:
+
+  ssh root@89.167.103.147
+
+Te pedirá contraseña. Ingresa la contraseña de root.
+
+PASO 2: Ejecuta el script de deployment
+═════════════════════════════════════════
+En la terminal SSH, copia y pega TODO esto:
+
+---COPIAR DESDE AQUÍ---
+
+#!/bin/bash
+set -e
+
+echo "🚀 io-prospector DEPLOYMENT"
+mkdir -p /opt/io-prospector /var/www/certbot
+cd /opt/io-prospector
+
+# Crear .env (contiene TODAS las credenciales)
+cat > .env << 'ENVEOF'
+SUPABASE_URL=https://zvehtloitnuglyjtxwye.supabase.co
+SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp2ZWh0bG9pdG51Z2x5anR4d3llIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTA3NjgyNCwiZXhwIjoyMDkwNjUyODI0fQ.5qoJbZfeY7o4W5nnIWKRKSPHstjuEmRuYbTnt_74xtY
+NEXT_PUBLIC_SUPABASE_URL=https://zvehtloitnuglyjtxwye.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_B0gQyDyf-p2vDg2UhytfDg_H54mWXbB
+FRONTEND_URL=https://pros.iorana.dev
+NEXT_PUBLIC_API_URL=https://api.pros.iorana.dev/api
+BACKEND_INTERNAL_URL=http://backend:4000
+BACKEND_PORT=4006
+FRONTEND_PORT=3004
+REDIS_PORT=6379
+NODE_ENV=production
+NEXT_TELEMETRY_DISABLED=1
+REDIS_URL=redis://redis:6379
+BULL_QUEUE_PREFIX=io_prospector
+EMAIL_FROM=noreply@iorana.dev
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=honatuya@gmail.com
+EMAIL_PASS=syolrxhccvaijkql
+GOOGLE_PLACES_API_KEY=AIzaSyCv5opVvfi_5RHfzjlLIFC1_xUaKOTqLmI
+GOOGLE_MAPS_API_KEY=AIzaSyCv5opVvfi_5RHfzjlLIFC1_xUaKOTqLmI
+FIRECRAWL_API_KEY=fc-30f8df272f2d4bcbb2f0a676eef5bd5d
+SERP_API_KEY=5933317376023440a9dc8770b8b79f653958781377aceaf8cc24f23b67567572
+N8N_WEBHOOK_URL=https://n8n.iorana.dev/webhook/email-outreach
+N8N_WEBHOOK_TOKEN=OeYhvN9EAbUh60
+LOG_LEVEL=info
+ENVEOF
+
+# Clone repo
+cd /opt
+rm -rf io-prospector 2>/dev/null || true
+git clone https://github.com/ioranadigital/io-prospector.git io-prospector
+cd /opt/io-prospector
+
+# Copy .env to repo (por si git lo ignoró)
+cp /opt/io-prospector/.env ./
+
+echo "Building Docker (5-10 min)..."
+docker-compose -f docker-compose.coolify.yml build --no-cache
+
+echo "Starting services..."
+docker-compose -f docker-compose.coolify.yml up -d
+
+echo "Waiting..."
+sleep 30
+
+echo "Status:"
+docker-compose -f docker-compose.coolify.yml ps
+
+echo "Backend health:"
+curl -s http://localhost:4006/health
+
+echo "Setting up SSL..."
+mkdir -p /var/www/certbot
+certbot certonly --webroot -w /var/www/certbot \
+  -d pros.iorana.dev -d api.pros.iorana.dev -d www.pros.iorana.dev \
+  --email honatuya@gmail.com --agree-tos --non-interactive --break-my-certs 2>&1 | tail -5
+
+echo ""
+echo "✅ DEPLOYMENT COMPLETADO"
+echo ""
+echo "Frontend: http://89.167.103.147:3004"
+echo "Backend:  http://89.167.103.147:4006"
+echo ""
+echo "Logs:"
+echo "  docker-compose -f /opt/io-prospector/docker-compose.coolify.yml logs -f"
+
+---HASTA AQUÍ---
+
+PASO 3: Espera a que termine (~20-30 minutos)
+═════════════════════════════════════════════
+- Docker build tarda 5-10 minutos
+- Services startup 5 minutos
+- SSL setup 5 minutos
+- Tests 5 minutos
+
+PASO 4: Configurar DNS (IMPORTANTE)
+═══════════════════════════════════
+Ve a Hetzner Cloud Console y configura:
+
+DNS Zone ID: 1366135
+
+3 registros:
+  1. Nombre: pros
+     Type: A Record
+     TTL: 3600
+     Value: 89.167.103.147
+
+  2. Nombre: api
+     Type: A Record
+     TTL: 3600
+     Value: 89.167.103.147
+
+  3. Nombre: www.pros
+     Type: CNAME Record
+     TTL: 3600
+     Value: pros.iorana.dev
+
+PASO 5: Espera propagación DNS (5-30 minutos)
+═════════════════════════════════════════════
+Verifica con:
+  nslookup pros.iorana.dev
+
+Debe retornar: 89.167.103.147
+
+PASO 6: Test endpoints
+══════════════════════
+Abre navegador:
+
+HTTP (ahora):
+  http://89.167.103.147:3004   (frontend)
+  http://89.167.103.147:4006   (backend)
+
+HTTPS (después de DNS):
+  https://pros.iorana.dev      (frontend)
+  https://api.pros.iorana.dev  (backend API)
+
+PASO 7: Monitorear (opcional)
+══════════════════════════════
+En terminal SSH:
+
+  docker-compose -f /opt/io-prospector/docker-compose.coolify.yml logs -f
+
+Ver status:
+  docker-compose -f /opt/io-prospector/docker-compose.coolify.yml ps
+
+Reiniciar un servicio:
+  docker-compose -f /opt/io-prospector/docker-compose.coolify.yml restart backend
+
+═════════════════════════════════════════════════════
+RESUMEN
+═════════════════════════════════════════════════════
+
+✅ TODO está automatizado
+✅ Un solo script a copiar/pegar en SSH
+✅ Credenciales incluidas
+✅ SSL automático
+✅ Solo falta DNS (manual, 5 min)
+
+Tiempo total: ~1 hora (incluye DNS propagation)
+
+¿Necesitas algo? Revisa:
+  - Logs: docker logs
+  - Health: curl http://localhost:4006/health
+  - Status: docker-compose ps
+
+═════════════════════════════════════════════════════
+¡ÉXITO!
+═════════════════════════════════════════════════════

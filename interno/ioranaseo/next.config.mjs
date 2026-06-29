@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -148,7 +147,6 @@ const nextConfig = {
 
   experimental: {
     optimizePackageImports: ["lucide-react", "bootstrap-icons"],
-    cpus: 1,
   },
 };
 

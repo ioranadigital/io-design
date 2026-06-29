@@ -1,0 +1,285 @@
+- generic [active] [ref=e1]:
+  - complementary [ref=e175]:
+    - generic [ref=e177]:
+      - img [ref=e179]
+      - generic [ref=e181]:
+        - paragraph [ref=e182]: IO Prospector
+        - paragraph [ref=e183]: Iorana Digital
+    - navigation [ref=e184]:
+      - generic [ref=e185]:
+        - paragraph [ref=e186]: Prospección
+        - generic [ref=e187]:
+          - link "Prospector Buscar & scrapear" [ref=e188] [cursor=pointer]:
+            - /url: /prospector
+            - img [ref=e189]
+            - generic [ref=e192]:
+              - paragraph [ref=e193]: Prospector
+              - paragraph [ref=e194]: Buscar & scrapear
+          - link "Histórico Sectores ya scrapeados" [ref=e195] [cursor=pointer]:
+            - /url: /prospecciones-historico
+            - img [ref=e196]
+            - generic [ref=e198]:
+              - paragraph [ref=e199]: Histórico
+              - paragraph [ref=e200]: Sectores ya scrapeados
+          - link "Configuración Sectores, exclusiones, API" [ref=e201] [cursor=pointer]:
+            - /url: /config
+            - img [ref=e202]
+            - generic [ref=e203]:
+              - paragraph [ref=e204]: Configuración
+              - paragraph [ref=e205]: Sectores, exclusiones, API
+      - generic [ref=e207]:
+        - paragraph [ref=e208]: Audit SEO
+        - generic [ref=e209]:
+          - link "Auditoría Analizar cualquier URL" [ref=e210] [cursor=pointer]:
+            - /url: /auditoria
+            - img [ref=e211]
+            - generic [ref=e213]:
+              - paragraph [ref=e214]: Auditoría
+              - paragraph [ref=e215]: Analizar cualquier URL
+          - link "Resultados Revisar & guardar como lead" [ref=e216] [cursor=pointer]:
+            - /url: /audit-resultados
+            - img [ref=e217]
+            - generic [ref=e220]:
+              - paragraph [ref=e221]: Resultados
+              - paragraph [ref=e222]: Revisar & guardar como lead
+          - link "Histórico Resultados por cliente" [ref=e223] [cursor=pointer]:
+            - /url: /audit-historico
+            - img [ref=e224]
+            - generic [ref=e226]:
+              - paragraph [ref=e227]: Histórico
+              - paragraph [ref=e228]: Resultados por cliente
+          - link "Configuración Checks, pesos, umbrales" [ref=e229] [cursor=pointer]:
+            - /url: /audit-config
+            - img [ref=e230]
+            - generic [ref=e231]:
+              - paragraph [ref=e232]: Configuración
+              - paragraph [ref=e233]: Checks, pesos, umbrales
+        - generic [ref=e234]:
+          - paragraph [ref=e235]: HERRAMIENTAS
+          - link "Schema.org PRO Análisis avanzado (30+ tipos)" [ref=e237] [cursor=pointer]:
+            - /url: /schema-analyzer-pro
+            - img [ref=e238]
+            - generic [ref=e240]:
+              - paragraph [ref=e241]: Schema.org PRO
+              - paragraph [ref=e242]: Análisis avanzado (30+ tipos)
+      - generic [ref=e244]:
+        - paragraph [ref=e245]: CRM
+        - generic [ref=e246]:
+          - link "Dashboard Métricas y análisis" [ref=e247] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e248]
+            - generic [ref=e250]:
+              - paragraph [ref=e251]: Dashboard
+              - paragraph [ref=e252]: Métricas y análisis
+          - link "Leads Leads de prospección y auditoría" [ref=e253] [cursor=pointer]:
+            - /url: /leads
+            - img [ref=e254]
+            - generic [ref=e258]:
+              - paragraph [ref=e259]: Leads
+              - paragraph [ref=e260]: Leads de prospección y auditoría
+          - link "Plantillas Email y WhatsApp" [ref=e261] [cursor=pointer]:
+            - /url: /crm/plantillas
+            - img [ref=e262]
+            - generic [ref=e265]:
+              - paragraph [ref=e266]: Plantillas
+              - paragraph [ref=e267]: Email y WhatsApp
+      - generic [ref=e269]:
+        - paragraph [ref=e270]: Admin
+        - generic [ref=e271]:
+          - link "Usuarios Gestión de accesos" [ref=e272] [cursor=pointer]:
+            - /url: /admin
+            - img [ref=e273]
+            - generic [ref=e278]:
+              - paragraph [ref=e279]: Usuarios
+              - paragraph [ref=e280]: Gestión de accesos
+          - link "Configuración Sistema global" [ref=e281] [cursor=pointer]:
+            - /url: /admin
+            - img [ref=e282]
+            - generic [ref=e285]:
+              - paragraph [ref=e286]: Configuración
+              - paragraph [ref=e287]: Sistema global
+      - generic [ref=e289]:
+        - paragraph [ref=e290]: Ayuda
+        - link "Guía Instrucciones de uso" [ref=e292] [cursor=pointer]:
+          - /url: /guide
+          - img [ref=e293]
+          - generic [ref=e296]:
+            - paragraph [ref=e297]: Guía
+            - paragraph [ref=e298]: Instrucciones de uso
+    - paragraph [ref=e300]: v1.0.0 · Local
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Schema.org Analyzer PRO" [level=1] [ref=e6]
+        - paragraph [ref=e7]: Análisis avanzado de 30+ entidades Schema.org
+      - generic [ref=e8]:
+        - textbox "https://ejemplo.com" [ref=e9]: https://example.com
+        - button "Analizar" [ref=e10] [cursor=pointer]:
+          - img [ref=e301]
+          - text: Analizar
+      - generic [ref=e14]:
+        - generic [ref=e304]:
+          - generic [ref=e305]:
+            - generic [ref=e306]:
+              - generic [ref=e307]:
+                - heading "Score General" [level=3] [ref=e308]
+                - paragraph [ref=e309]: Completitud de datos estructurados
+              - generic [ref=e310]: "0"
+            - generic [ref=e311]:
+              - generic [ref=e312]: https://example.com
+              - button "Copiar" [ref=e313] [cursor=pointer]
+          - generic [ref=e314]:
+            - generic [ref=e315]:
+              - generic [ref=e316]: "0"
+              - generic [ref=e317]: Schemas totales
+            - generic [ref=e318]:
+              - generic [ref=e319]: "0"
+              - generic [ref=e320]: Válidos
+            - generic [ref=e321]:
+              - generic [ref=e322]: Unknown
+              - generic [ref=e323]: Tipo principal
+            - generic [ref=e324]:
+              - generic [ref=e325]: "0"
+              - generic [ref=e326]: Alertas críticas
+          - generic [ref=e327]:
+            - heading "Schemas Recomendados (3)" [level=3] [ref=e328]
+            - generic [ref=e329]:
+              - generic [ref=e330]:
+                - heading "Organization" [level=5] [ref=e331]
+                - paragraph [ref=e332]: Identifica la empresa en Knowledge Graph
+              - generic [ref=e333]:
+                - heading "WebSite" [level=5] [ref=e334]
+                - paragraph [ref=e335]: Datos del sitio con SearchAction
+              - generic [ref=e336]:
+                - heading "LocalBusiness" [level=5] [ref=e337]
+                - paragraph [ref=e338]: Si tienes ubicación física
+          - generic [ref=e339]:
+            - img [ref=e340]
+            - heading "¡Perfecto!" [level=3] [ref=e343]
+            - paragraph [ref=e344]: Tu Schema.org está optimizado
+        - generic [ref=e19]:
+          - heading "📚 Entidades Schema.org" [level=3] [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - generic [ref=e23]:
+                - img [ref=e24]
+                - heading "Comercio & Transacciones" [level=4] [ref=e28]
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - generic [ref=e31]: Product
+                  - generic [ref=e32]: Ficha de producto
+                - generic [ref=e33]:
+                  - generic [ref=e34]: ProductGroup
+                  - generic [ref=e35]: Variantes
+                - generic [ref=e36]:
+                  - generic [ref=e37]: Offer
+                  - generic [ref=e38]: Precios
+                - generic [ref=e39]:
+                  - generic [ref=e40]: AggregateOffer
+                  - generic [ref=e41]: Multivendedor
+            - generic [ref=e42]:
+              - generic [ref=e43]:
+                - img [ref=e44]
+                - heading "Contenido & Artículos" [level=4] [ref=e47]
+              - generic [ref=e48]:
+                - generic [ref=e49]:
+                  - generic [ref=e50]: Article
+                  - generic [ref=e51]: Artículos genéricos
+                - generic [ref=e52]:
+                  - generic [ref=e53]: BlogPosting
+                  - generic [ref=e54]: Blog
+                - generic [ref=e55]:
+                  - generic [ref=e56]: NewsArticle
+                  - generic [ref=e57]: Noticias
+                - generic [ref=e58]:
+                  - generic [ref=e59]: TechArticle
+                  - generic [ref=e60]: Documentación
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - img [ref=e63]
+                - heading "Imanes de IA" [level=4] [ref=e73]
+              - generic [ref=e74]:
+                - generic [ref=e75]:
+                  - generic [ref=e76]: FAQPage
+                  - generic [ref=e77]: Preguntas frecuentes
+                - generic [ref=e78]:
+                  - generic [ref=e79]: HowTo
+                  - generic [ref=e80]: Tutoriales
+                - generic [ref=e81]:
+                  - generic [ref=e82]: Recipe
+                  - generic [ref=e83]: Recetas
+                - generic [ref=e84]:
+                  - generic [ref=e85]: AggregateRating
+                  - generic [ref=e86]: Ratings
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - img [ref=e89]
+                - heading "Datos Organizacionales" [level=4] [ref=e93]
+              - generic [ref=e94]:
+                - generic [ref=e95]:
+                  - generic [ref=e96]: Organization
+                  - generic [ref=e97]: Empresa
+                - generic [ref=e98]:
+                  - generic [ref=e99]: Corporation
+                  - generic [ref=e100]: Corporación
+                - generic [ref=e101]:
+                  - generic [ref=e102]: EducationalOrganization
+                  - generic [ref=e103]: Educativa
+                - generic [ref=e104]:
+                  - generic [ref=e105]: NGO
+                  - generic [ref=e106]: Sin fines lucro
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - img [ref=e109]
+                - heading "SEO Local & Negocios" [level=4] [ref=e112]
+              - generic [ref=e113]:
+                - generic [ref=e114]:
+                  - generic [ref=e115]: LocalBusiness
+                  - generic [ref=e116]: Negocio local
+                - generic [ref=e117]:
+                  - generic [ref=e118]: Restaurant
+                  - generic [ref=e119]: Restaurante
+                - generic [ref=e120]:
+                  - generic [ref=e121]: Store
+                  - generic [ref=e122]: Tienda
+                - generic [ref=e123]:
+                  - generic [ref=e124]: ProfessionalService
+                  - generic [ref=e125]: Servicios
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - img [ref=e128]
+                - heading "Multimedia" [level=4] [ref=e130]
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - generic [ref=e133]: VideoObject
+                  - generic [ref=e134]: Vídeos
+                - generic [ref=e135]:
+                  - generic [ref=e136]: ImageObject
+                  - generic [ref=e137]: Imágenes
+                - generic [ref=e138]:
+                  - generic [ref=e139]: AudioObject
+                  - generic [ref=e140]: Audio
+                - generic [ref=e141]:
+                  - generic [ref=e142]: MediaObject
+                  - generic [ref=e143]: Multimedia
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - img [ref=e146]
+                - heading "Estructura & Navegación" [level=4] [ref=e151]
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - generic [ref=e154]: BreadcrumbList
+                  - generic [ref=e155]: Migas de pan
+                - generic [ref=e156]:
+                  - generic [ref=e157]: WebSite
+                  - generic [ref=e158]: Sitio web
+                - generic [ref=e159]:
+                  - generic [ref=e160]: Person
+                  - generic [ref=e161]: Persona/autor
+                - generic [ref=e162]:
+                  - generic [ref=e163]: Event
+                  - generic [ref=e164]: Eventos
+  - status [ref=e350]: ✅ Análisis completado
+  - button "Open Next.js Dev Tools" [ref=e170] [cursor=pointer]:
+    - img [ref=e171]
+  - alert [ref=e174]

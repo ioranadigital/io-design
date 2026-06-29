@@ -1,0 +1,15 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Schema.org Analyzer PRO" [level=1] [ref=e6]
+        - paragraph [ref=e7]: Análisis avanzado de 30+ entidades Schema.org
+      - generic [ref=e8]:
+        - textbox "https://ejemplo.com" [ref=e9]
+        - button "Analizar" [disabled] [ref=e10]:
+          - img [ref=e11]
+          - text: Analizar
+      - paragraph [ref=e15]: Ingresa una URL para analizar sus esquemas Schema.org
+  - button "Open Next.js Dev Tools" [ref=e21] [cursor=pointer]:
+    - img [ref=e22]
+  - alert [ref=e25]

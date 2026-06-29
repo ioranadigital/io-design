@@ -1,0 +1,7 @@
+{
+  "name": "tools-io-design",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "io-design project",
+  "private": true
+}
