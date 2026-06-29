@@ -4,6 +4,7 @@
 packages:
   # Librerías compartidas
   - 'lib'
+  - 'scripts'
 
   # Herramientas y librerías (tools/)
   - 'tools/io-budget'
