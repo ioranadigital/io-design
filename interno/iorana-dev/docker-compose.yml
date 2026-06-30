@@ -11,7 +11,8 @@ services:
       dockerfile: Dockerfile
     environment:
       - NODE_ENV=production
-      - PORT=3000
+      - PORT=${IORANA_DEV_FRONTEND_PORT:-3011}
+      - N8N_PORT=${N8N_PORT:-5678}
       - REDIS_URL=${REDIS_URL}
       - SESSION_SECRET=${SESSION_SECRET}
       - PASSWORD_HASH=${PASSWORD_HASH}
