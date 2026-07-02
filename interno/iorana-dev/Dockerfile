@@ -4,6 +4,9 @@
 
 FROM node:20-alpine
 
+# Instalar pnpm globalmente
+RUN npm install -g pnpm
+
 # Usuario no-root para mayor seguridad
 RUN addgroup -S iorana && adduser -S iorana -G iorana
 
