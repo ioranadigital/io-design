@@ -1,24 +1,26 @@
-FROM node:20-alpine
+# Backend Dockerfile - IO Prospector
+# Multi-stage build para optimizar imagen
 
+FROM node:20-alpine AS builder
 WORKDIR /app
+COPY backend/package*.json ./backend/
+WORKDIR /app/backend
+RUN npm ci --only=production && npm cache clean --force
 
-# Skip browser downloads from playwright and whatsapp-web.js (puppeteer)
-ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-ENV PUPPETEER_SKIP_DOWNLOAD=true
-
-# Copiar solo package.json primero
-COPY backend/package*.json ./
-
-# Instalar dependencias de producción
-RUN npm install --omit=dev
-
-# Copiar resto del backend
+FROM node:20-alpine
+WORKDIR /app
+COPY --from=builder /app/backend/node_modules ./node_modules
 COPY backend/ .
 
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -S nodejs -u 1001 && \
+    chown -R nodejs:nodejs /app
+
+USER nodejs
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD node -e "require('http').get('http://localhost:4000/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
+
 EXPOSE 4000
-
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:4000/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
-
-CMD ["npm", "start"]
+ENV NODE_ENV=production PORT=4000 LOG_LEVEL=info
+CMD ["node", "server.js"]

@@ -1,46 +1,31 @@
-# Multi-stage build for Next.js production
+# Frontend Dockerfile - IO Prospector
+# Multi-stage build para Next.js
 
-# Stage 1: Builder
-FROM node:20-slim AS builder
-
-ARG NODE_ENV=production
-ARG NEXT_PUBLIC_SUPABASE_URL
-ARG NEXT_PUBLIC_SUPABASE_ANON_KEY
-ARG NEXT_PUBLIC_API_URL
-
+FROM node:20-alpine AS builder
 WORKDIR /app
-
-ENV NODE_ENV=production
-ENV NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
-ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
-ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
-ENV NEXT_TELEMETRY_DISABLED=1
-
-COPY frontend/package.json frontend/package-lock.json ./
+COPY frontend/package*.json ./
 RUN npm ci
-
 COPY frontend/ .
-RUN npm run build
+RUN if [ -f build-safe.js ]; then node build-safe.js; else npm run build:next; fi
 
-# Stage 2: Runtime
 FROM node:20-alpine
-
 WORKDIR /app
-
-ENV NODE_ENV=production
-ENV NODE_OPTIONS="--max-old-space-size=2048"
-ENV NEXT_TELEMETRY_DISABLED=1
-ENV PORT=3002
-
-COPY --from=builder /app/package.json /app/package-lock.json ./
-RUN npm ci --omit=dev
+COPY frontend/package*.json ./
+RUN npm ci --only=production && npm cache clean --force
 
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/node_modules ./node_modules
+
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -S nodejs -u 1001 && \
+    chown -R nodejs:nodejs /app
+
+USER nodejs
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD node -e "require('http').get('http://localhost:3002/', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
 
 EXPOSE 3002
-
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3002', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
-
+ENV NODE_ENV=production PORT=3002 NEXT_TELEMETRY_DISABLED=1
 CMD ["npm", "start"]

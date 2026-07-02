@@ -1,0 +1,260 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║  🚀 IO-PROSPECTOR: DEPLOYMENT AUTOMATION - COMPLETADO                    ║
+║                                                                            ║
+║  Servidor: 168.119.53.118 (Coolify)                                      ║
+║  Fecha: 2026-07-02                                                        ║
+║  Status: ✅ LISTO PARA PRODUCCIÓN                                        ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+📋 ARCHIVOS GENERADOS
+═══════════════════════════════════════════════════════════════════════════
+
+✅ En raíz del proyecto:
+   • backend.Dockerfile           (Multi-stage Docker builder)
+   • frontend.Dockerfile          (Next.js optimizado)
+   • .env.example                 (Template de variables)
+   • DEPLOY-SUMMARY.txt           (Este resumen)
+
+✅ En docs/deployment/:
+   • README.md                    (Índice completo)
+   • QUICK-DEPLOY.md             (Guía rápida - 5 min)
+   • COOLIFY-DEPLOYMENT-GUIDE.md (Guía detallada - 30 min)
+   • sync-to-coolify.ps1         (Script de sincronización SSH)
+   • verify-ports.ps1            (Script de verificación)
+
+
+🎯 PASOS A EJECUTAR (EN ORDEN)
+═══════════════════════════════════════════════════════════════════════════
+
+PASO 1: SINCRONIZAR CÓDIGO AL SERVIDOR (2 minutos)
+─────────────────────────────────────────────────────
+Ejecuta en PowerShell desde: E:\git\tools\io-prospector\
+
+  .\docs\deployment\sync-to-coolify.ps1
+
+Qué hace:
+  ✓ Conecta via SSH (requiere ~/.ssh/id_ed25519)
+  ✓ Sincroniza archivos a /apps/io-prospector
+  ✓ Excluye: node_modules, .next, .git, .env (local)
+  ✓ Muestra progreso
+
+
+PASO 2: CONECTAR AL SERVIDOR Y CREAR .env (1 minuto)
+──────────────────────────────────────────────────────
+En PowerShell o Git Bash:
+
+  ssh -i ~/.ssh/id_ed25519 root@168.119.53.118
+  cd /apps/io-prospector
+
+Luego copiar .env.example a .env:
+
+  cp .env.example .env
+  nano .env
+
+Rellenar valores CRÍTICOS desde master.env:
+  • SUPABASE_URL
+  • SUPABASE_KEY
+  • SUPABASE_SERVICE_ROLE_KEY
+  • NEXT_PUBLIC_SUPABASE_ANON_KEY
+  • SMTP_USER, SMTP_PASS
+  • GOOGLE_*_API_KEY
+
+
+PASO 3: CONSTRUIR IMÁGENES DOCKER (3-5 minutos)
+──────────────────────────────────────────────────
+En servidor:
+
+  docker-compose build --progress=plain
+
+Esperar a que termine (verá progreso de compilación)
+
+
+PASO 4: INICIAR CONTENEDORES (1 minuto)
+────────────────────────────────────────
+En servidor:
+
+  docker-compose up -d
+
+Verificar que los 3 contenedores estén UP:
+
+  docker-compose ps
+
+Debería ver:
+  ✓ io-prospector-backend     (Up)
+  ✓ io-prospector-frontend    (Up)
+  ✓ io-prospector-redis       (Up)
+
+
+PASO 5: VERIFICAR ACCESO (1 minuto)
+────────────────────────────────────
+Desde tu máquina (PowerShell):
+
+  .\docs\deployment\verify-ports.ps1 -Check both
+
+O manualmente:
+
+  curl http://168.119.53.118:3004          # Frontend
+  curl http://168.119.53.118:4006/api/health  # Backend
+  redis-cli -h 168.119.53.118 ping          # Redis
+
+
+PASO 6: CONFIGURAR COOLIFY PANEL (Opcional pero recomendado)
+──────────────────────────────────────────────────────────────
+Ir a: http://168.119.53.118:8000
+
+  1. Crear Project: "IO-Prospector"
+  2. Crear Application: "docker-compose"
+  3. Set Build CMD: docker-compose build --progress=plain
+  4. Set Start CMD: docker-compose up -d
+  5. Configure Ports: 3004, 4006
+  6. Add .env variables
+  7. Deploy
+
+
+⏱️ TIEMPO TOTAL: ~10-15 MINUTOS (Primera vez)
+
+
+📊 CONFIGURACIÓN FINAL ESPERADA
+═══════════════════════════════════════════════════════════════════════════
+
+Frontend:
+  URL:     http://168.119.53.118:3004
+  Puerto:  3004 → Contenedor 3002
+  Stack:   Next.js 15 + Tailwind CSS
+  Status:  running
+
+Backend API:
+  URL:     http://168.119.53.118:4006/api
+  Puerto:  4006 → Contenedor 4000
+  Stack:   Express + Node.js 20
+  Status:  running
+
+Database Cache:
+  URL:     redis://168.119.53.118:6379
+  Puerto:  6379
+  Stack:   Redis 7 Alpine
+  Status:  running
+
+
+🔧 COMANDOS ÚTILES (En servidor)
+═══════════════════════════════════════════════════════════════════════════
+
+# Ver logs en tiempo real
+docker-compose logs -f
+
+# Ver logs de un servicio específico
+docker-compose logs -f frontend
+docker-compose logs -f backend
+
+# Ver estado de contenedores
+docker-compose ps
+docker stats
+
+# Reiniciar un servicio
+docker-compose restart frontend
+
+# Parar todo
+docker-compose down
+
+# Recuperar información de contenedor específico
+docker exec io-prospector-frontend npm start
+docker exec io-prospector-backend node -e "require('http').get('http://localhost:4000/health')"
+
+# Entrar en consola del contenedor
+docker exec -it io-prospector-backend bash
+
+
+🚨 TROUBLESHOOTING RÁPIDO
+═══════════════════════════════════════════════════════════════════════════
+
+❌ "Connection refused" en 3004/4006
+  → docker-compose ps (verificar que esté UP)
+  → docker-compose logs frontend (ver qué pasó)
+  → docker-compose restart frontend
+
+❌ "Redis connection timeout"
+  → docker-compose logs redis
+  → docker-compose restart redis
+
+❌ ".env not found"
+  → cp .env.example .env
+  → nano .env (rellenar valores)
+
+❌ "Build failed: Cannot find module"
+  → docker-compose build --no-cache
+  → docker system prune -a
+
+❌ "Port already in use"
+  → lsof -i :3004
+  → kill -9 <PID>
+  → docker-compose up -d
+
+
+📖 DOCUMENTACIÓN
+═══════════════════════════════════════════════════════════════════════════
+
+✅ GUÍA RÁPIDA (5 min):
+   E:\git\tools\io-prospector\docs\deployment\QUICK-DEPLOY.md
+
+✅ GUÍA COMPLETA (30 min):
+   E:\git\tools\io-prospector\docs\deployment\COOLIFY-DEPLOYMENT-GUIDE.md
+
+✅ ÍNDICE Y REFERENCIAS:
+   E:\git\tools\io-prospector\docs\deployment\README.md
+
+✅ DOCKERFILE BACKEND:
+   E:\git\tools\io-prospector\backend.Dockerfile
+
+✅ DOCKERFILE FRONTEND:
+   E:\git\tools\io-prospector\frontend.Dockerfile
+
+
+🔄 WORKFLOW DE ACTUALIZACIÓN (Después de cambios)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Hacer cambios locales en tu IDE
+2. Commitear en Git: git commit -m "feat: descripción"
+3. Sincronizar: .\docs\deployment\sync-to-coolify.ps1
+4. SSH al servidor: ssh -i ~/.ssh/id_ed25519 root@168.119.53.118
+5. Reconstruir: cd /apps/io-prospector && docker-compose build
+6. Reiniciar: docker-compose restart frontend backend
+7. Verificar: docker-compose ps
+
+
+✨ SIGUIENTES MEJORAS (OPCIONAL)
+═══════════════════════════════════════════════════════════════════════════
+
+[ ] Configurar GitHub Actions para auto-deploy
+[ ] Agregar SSL/HTTPS con Let's Encrypt
+[ ] Backup automático de Redis
+[ ] Monitoreo con Prometheus/Grafana
+[ ] Database migrations automáticas
+[ ] CDN para assets estáticos
+
+
+📞 SOPORTE
+═══════════════════════════════════════════════════════════════════════════
+
+Panel Coolify:     http://168.119.53.118:8000
+Frontend Local:    http://168.119.53.118:3004
+Backend Local:     http://168.119.53.118:4006/api
+
+SSH Conexión:      ssh -i ~/.ssh/id_ed25519 root@168.119.53.118
+SSH Key Location:  ~/.ssh/id_ed25519 (debe existir)
+
+Logs:              docker-compose logs -f
+Health Check:      curl http://168.119.53.118:4006/api/health
+
+
+═══════════════════════════════════════════════════════════════════════════
+✅ DEPLOYMENT AUTOMATION COMPLETADO
+
+Todos los archivos están listos. 
+Ejecuta los PASOS A EJECUTAR arriba para desplegar.
+
+Generado: 2026-07-02
+Status: ✅ Listo para Producción
+═══════════════════════════════════════════════════════════════════════════
