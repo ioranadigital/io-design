@@ -1,0 +1,17 @@
+=== DOCUMENTOS A REVISAR ===
+
+PRIORITARIOS (Modos, Protocolos, Instrucciones):
+1. E:/git/docs/modos/MODO-LIMPIEZA.md → MODO (no está en 007 DOCUMENTACION)
+2. E:/git/docs/COMANDOS-MODO-PROYECTOS.md → COMANDOS (no está en 007 DOCUMENTACION)
+3. E:/git/docs/archivo-generado/PROTOCOLO-GLOBAL.md → PROTOCOLO (no está en 007 DOCUMENTACION)
+4. E:/git/tools/io-prospector/docs/INSTRUCCIONES-IO-PROSPECTOR.md → INSTRUCCIONES proyecto
+5. E:/git/tools/io-prospector/docs/FLUJO-PROSPECCION.md → FLUJO proyecto
+
+SECUNDARIOS (Artifacts, módulos reutilizables):
+6. E:/git/artifacts/X-MODULOS-REUTILIZABLES/08_MODULOS REUTILIZABLES/iorana.digital-seccion-pymes/INSTRUCCIONES-INSTALACION.md
+7. E:/git/artifacts/X-MODULOS-REUTILIZABLES/09_FORMS-CONFIG/INSTRUCCIONES-SUPABASE.md
+
+LEGACY (Archive):
+8. E:/git/_archive/io-semantico-old/frontend/PROSPECCIONES-FLUJO.md (archive - puede ignorarse)
+
+Moviendo prioritarios...

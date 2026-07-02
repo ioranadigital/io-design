@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # 🚀 FULL DEPLOYMENT SCRIPT - io-prospector to Hetzner
 # ====================================================

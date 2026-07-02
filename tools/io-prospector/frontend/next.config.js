@@ -10,6 +10,13 @@ const nextConfig = {
   },
   productionBrowserSourceMaps: false,
   compress: true,
+  experimental: {
+    dynamicIO: true,
+  },
+  onDemandEntries: {
+    maxInactiveAge: 60 * 1000,
+    pagesBufferLength: 5,
+  },
 };
 
 module.exports = nextConfig;
